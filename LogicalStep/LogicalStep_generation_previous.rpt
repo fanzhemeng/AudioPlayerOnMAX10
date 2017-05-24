@@ -1,0 +1,59 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\LogicalStepSVN\LogicalStep\LogicalStep.qsys --block-symbol-file --output-directory=C:\LogicalStepSVN\LogicalStep\LogicalStep --family="MAX 10" --part=10M08SAE144C8G
+Progress: Loading LogicalStep/LogicalStep.qsys
+Progress: Reading input file
+Progress: Adding Audio [altera_up_avalon_audio 15.1]
+Progress: Parameterizing module Audio
+Progress: Adding altpll_0 [altpll 15.1]
+Progress: Parameterizing module altpll_0
+Progress: Adding audio_i2c_config [altera_up_avalon_audio_and_video_config 15.1]
+Progress: Parameterizing module audio_i2c_config
+Progress: Adding button_pio [altera_avalon_pio 15.1]
+Progress: Parameterizing module button_pio
+Progress: Adding clk_50 [clock_source 15.1]
+Progress: Parameterizing module clk_50
+Progress: Adding egm [egm 1.0]
+Progress: Parameterizing module egm
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 15.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding lcd_display [altera_avalon_lcd_16207 15.1]
+Progress: Parameterizing module lcd_display
+Progress: Adding led_pio [altera_avalon_pio 15.1]
+Progress: Parameterizing module led_pio
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 15.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding response_out [altera_avalon_pio 15.1]
+Progress: Parameterizing module response_out
+Progress: Adding sdram_0 [altera_avalon_new_sdram_controller 15.1]
+Progress: Parameterizing module sdram_0
+Progress: Adding seven_seg_pio [dual_7_segment 1.0]
+Progress: Parameterizing module seven_seg_pio
+Progress: Adding spi_master [spi_master 1.3]
+Progress: Parameterizing module spi_master
+Progress: Adding stimulus_in [altera_avalon_pio 15.1]
+Progress: Parameterizing module stimulus_in
+Progress: Adding switch_pio [altera_avalon_pio 15.1]
+Progress: Parameterizing module switch_pio
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 15.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding system_timer [altera_avalon_timer 15.1]
+Progress: Parameterizing module system_timer
+Progress: Adding timer_0 [altera_avalon_timer 15.1]
+Progress: Parameterizing module timer_0
+Progress: Adding uart [altera_avalon_uart 15.1]
+Progress: Parameterizing module uart
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: LogicalStep.button_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: LogicalStep.stimulus_in: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: LogicalStep.switch_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: LogicalStep.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: LogicalStep.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Warning: LogicalStep.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: LogicalStep.altpll_0: altpll_0.locked_conduit must be exported, or connected to a matching conduit.
+Warning: LogicalStep.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
+Warning: LogicalStep.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Info: qsys-generate succeeded.
+Info: Stopping: Create block symbol file (.bsf)
