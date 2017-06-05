@@ -985,3 +985,571 @@ Info: Building ../lab1_bsp/
 C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
 [BSP build complete]
 [lab1 build complete]
+15:02:13 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+15:02:21 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+15:04:09 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+15:05:44 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+15:05:50 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+15:09:47 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 68 KBytes program size (code + initialized data).
+Info:            8119 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+15:09:55 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+15:24:40 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 68 KBytes program size (code + initialized data).
+Info:            8119 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+15:24:46 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+16:19:20 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'polling_test':
+hello_world.c:133:4: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+    for (int i = 0; i < tasks_per_cycle; i += 1) {
+    ^
+hello_world.c:133:4: note: use option -std=c99, -std=gnu99, -std=c11 or -std=gnu11 to compile your code
+make: *** [obj/default/hello_world.o] Error 1
+16:19:23 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'polling_test':
+hello_world.c:133:4: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+    for (int i = 0; i < tasks_per_cycle; i += 1) {
+    ^
+hello_world.c:133:4: note: use option -std=c99, -std=gnu99, -std=c11 or -std=gnu11 to compile your code
+make: *** [obj/default/hello_world.o] Error 1
+16:21:12 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 69 KBytes program size (code + initialized data).
+Info:            8119 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+16:21:19 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+16:24:55 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 69 KBytes program size (code + initialized data).
+Info:            8119 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+16:25:00 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+16:30:56 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 69 KBytes program size (code + initialized data).
+Info:            8119 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+16:31:02 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+16:33:34 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 69 KBytes program size (code + initialized data).
+Info:            8119 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+16:33:39 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+16:40:37 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 69 KBytes program size (code + initialized data).
+Info:            8119 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+16:40:42 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+16:44:35 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+16:51:24 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 69 KBytes program size (code + initialized data).
+Info:            8118 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+16:51:29 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+16:52:12 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+16:52:14 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+16:53:52 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 69 KBytes program size (code + initialized data).
+Info:            8118 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+16:53:57 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+16:55:11 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 69 KBytes program size (code + initialized data).
+Info:            8118 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+16:55:17 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+16:56:55 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 69 KBytes program size (code + initialized data).
+Command canceled
+16:58:32 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Command canceled
+16:58:40 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 69 KBytes program size (code + initialized data).
+Info:            8118 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+16:58:46 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+16:59:33 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 69 KBytes program size (code + initialized data).
+Info:            8118 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+16:59:38 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+17:01:47 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 69 KBytes program size (code + initialized data).
+Info:            8118 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+17:01:52 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+17:02:53 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+17:02:56 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+17:05:01 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 70 KBytes program size (code + initialized data).
+Info:            8118 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+17:05:06 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+17:06:18 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 70 KBytes program size (code + initialized data).
+Info:            8118 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+17:06:24 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+17:10:09 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+17:10:13 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+17:12:19 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 70 KBytes program size (code + initialized data).
+Info:            8118 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+17:12:25 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+17:15:03 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 70 KBytes program size (code + initialized data).
+Info:            8118 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+17:15:10 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+17:15:57 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 70 KBytes program size (code + initialized data).
+Info:            8118 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+17:18:31 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 70 KBytes program size (code + initialized data).
+Info:            8118 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+17:18:37 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+17:21:54 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+17:21:57 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+17:26:05 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 70 KBytes program size (code + initialized data).
+Info:            8118 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+17:26:10 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]
+17:33:55 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab1_bsp//HAL/inc -I../lab1_bsp/ -I../lab1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DALTERA_AVALON_JTAG_UART_SMALL    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking lab1.elf
+nios2-elf-g++  -T'../lab1_bsp//linker.x' -msys-crt0='../lab1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lab1_bsp/   -Wl,-Map=lab1.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o lab1.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert lab1.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/lab1_bsp/../../LogicalStep.sopcinfo
+Info: (lab1.elf) 70 KBytes program size (code + initialized data).
+Info:            8118 KBytes free for stack + heap.
+Info: Creating lab1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab1.elf >lab1.objdump
+[lab1 build complete]
+17:34:00 **** Incremental Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+[BSP build complete]
+[lab1 build complete]

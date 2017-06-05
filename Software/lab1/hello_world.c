@@ -19,67 +19,174 @@
 #include "system.h"
 #include "altera_avalon_pio_regs.h"
 
-static void egm_isr(void* context, alt_u32 id)
-{
-	// Write falling then rising edge to response_out
+static void egm_isr(void* context, alt_u32 id) {
+	// Write rising edge then falling to response_out
 	IOWR(RESPONSE_OUT_BASE, 0, 0xFF);
 	IOWR(RESPONSE_OUT_BASE, 0, 0x0);
 
 	IOWR(STIMULUS_IN_BASE, 3, 0x0); // Clear stimulus_in ISR
 }
 
-int background()
-{
+int background() {
 	int j;
 	int x = 0;
 	int grainsize = 4;
 	int g_taskProcessed = 0;
-	for(j = 0; j < grainsize; j++){
+	for (j = 0; j < grainsize; j++) {
 		g_taskProcessed++;
 	}
 	return x;
 }
 
-int main()
-{
-  printf("Running EGM Latency test with ISR (Lab1)");
+void isr_test() {
+	printf("Running EGM Latency test with ISR (Lab1)");
 
-  unsigned int numBackground;
+	//Clear previous interrupts if any and register ISR
+	IOWR(STIMULUS_IN_BASE, 3, 0x0);
+	alt_irq_register(STIMULUS_IN_IRQ, (void*) 0, egm_isr);
 
-  //Clear previous interrupts if any and register ISR
-  IOWR(STIMULUS_IN_BASE, 3, 0x0);
-  alt_irq_register(STIMULUS_IN_IRQ, (void*)0, egm_isr);
+	// Activate stimulus IRQ
+	IOWR(STIMULUS_IN_BASE, 2, 0xFF);
 
-  // Activate stimulus
-  IOWR(STIMULUS_IN_BASE, 2, 0xf);
+	unsigned int period, duty_cycle, avg_latency, total_missed, bg_task_count;
 
-  unsigned int period;
-  for(period = 2; period <= 5000; ++period){
-	  //Turn off EGM
-	  IOWR(EGM_BASE, 0, 0);
+	for (period = 2; period <= 5000; period += 2) {
+		//Turn off EGM
+		IOWR(EGM_BASE, 0, 0);
 
-	  // Setup EGM
-	  unsigned int duty_cycle = period / 2;
-	  IOWR(EGM_BASE, 2, period);
-	  IOWR(EGM_BASE, 3, duty_cycle);
+		// Setup EGM
+		duty_cycle = period / 2;
+		IOWR(EGM_BASE, 2, period);
+		IOWR(EGM_BASE, 3, duty_cycle);
 
-	  //Activate EGM
-	  IOWR(EGM_BASE, 0, 1);
+		bg_task_count = 0;
 
-	  while(IORD(EGM_BASE, 1)){
-		  background();
-		  numBackground += 1;
-	  }
+		//Activate EGM
+		IOWR(EGM_BASE, 0, 1);
 
-	  unsigned int avg_latency = IORD(EGM_BASE, 4);
-	  unsigned int total_missed = IORD(EGM_BASE, 5);
+		while (IORD(EGM_BASE, 1)) {
+			background();
+			bg_task_count += 1;
+		}
 
-	  // Disable EGM
-	  IOWR(EGM_BASE, 0, 0);
+		avg_latency = IORD(EGM_BASE, 4);
+		total_missed = IORD(EGM_BASE, 5);
 
-	  printf("period: %d, dutycycle: %d, total background tasks: %d, average latency: %d, total missed: %d\n",
-			  period, duty_cycle, numBackground, avg_latency, total_missed);
-  }
+		// Disable EGM
+		IOWR(EGM_BASE, 0, 0);
 
-  return 0;
+		printf(
+				"period: %d, dutycycle: %d, total background tasks: %d, average latency: %d, total missed: %d\n",
+				period, duty_cycle, bg_task_count, avg_latency, total_missed);
+	}
+
+	printf("At the end of test");
+}
+
+// Tight poll for stimulus edge, run x amount of BG tasks, then poll again
+void polling_test() {
+	printf("Running EGM Latency test with polling (Lab1)\n");
+
+	unsigned int period, duty_cycle, avg_latency, total_missed, bg_task_count;
+	for (period = 2; period <= 5000; period += 1000) {
+
+		//Turn off EGM
+		IOWR(EGM_BASE, 0, 0);
+
+		// Setup EGM
+		duty_cycle = period / 2;
+		IOWR(EGM_BASE, 2, period);
+		IOWR(EGM_BASE, 3, duty_cycle);
+
+		unsigned int tasks_per_cycle = 0;
+		bg_task_count = 0;
+
+		//Activate EGM
+		IOWR(EGM_BASE, 0, 1);
+
+		// ************************************************************
+
+		while (IORD(EGM_BASE, 1)) {
+			if (IORD(STIMULUS_IN_BASE, 0)) {// Poll for the first cycle's rising edge
+				// Send response
+				IOWR(RESPONSE_OUT_BASE, 0, 0xFF);
+				IOWR(RESPONSE_OUT_BASE, 0, 0x0);
+
+				while (IORD(STIMULUS_IN_BASE, 0)) {
+					background();
+					if (IORD(EGM_BASE, 5) != 0) {
+						tasks_per_cycle = 0;
+						break;
+					}
+					bg_task_count += 1;
+					tasks_per_cycle += 1;
+				}
+
+				while (!IORD(STIMULUS_IN_BASE, 0)) {
+					background();
+					if (IORD(EGM_BASE, 5) != 0) {
+						tasks_per_cycle = 0;
+						break;
+					}
+					bg_task_count += 1;
+					tasks_per_cycle += 1;
+				}
+
+				if (tasks_per_cycle != 0) {
+					tasks_per_cycle -= 1;
+				}
+				break; // Characterization done
+			}
+		}
+
+		IOWR(RESPONSE_OUT_BASE, 0, 0xFF);
+		IOWR(RESPONSE_OUT_BASE, 0, 0x0);
+
+		while (IORD(STIMULUS_IN_BASE, 0)) {
+			//do nothing
+		}
+
+		while (!IORD(STIMULUS_IN_BASE, 0)) {
+			//do nothing
+		}
+
+		// For the next cycles, tight poll stimulus, run x tasks, then poll again
+		while (IORD(EGM_BASE, 1)) {
+			while ((!IORD(STIMULUS_IN_BASE, 0)) && IORD(EGM_BASE, 1)) {
+				//do nothing
+			}
+			// Send response
+			IOWR(RESPONSE_OUT_BASE, 0, 0xFF);
+			IOWR(RESPONSE_OUT_BASE, 0, 0x0);
+
+			int i;
+			for (i = 0; i < tasks_per_cycle; i += 1) {
+				background();
+				bg_task_count += 1;
+			}
+
+		}
+
+		// ************************************************************
+
+		avg_latency = IORD(EGM_BASE, 4);
+		total_missed = IORD(EGM_BASE, 5);
+
+		// Disable EGM
+		IOWR(EGM_BASE, 0, 0);
+
+		printf(
+				"maxtasks: %d, period: %d, dutycycle: %d, total background tasks: %d, average latency: %d, total missed: %d\n",
+				tasks_per_cycle, period, duty_cycle, bg_task_count, avg_latency,
+				total_missed);
+	}
+
+	printf("At the end of test");
+}
+
+int main() {
+	//isr_test();
+	polling_test();
+
+	return 0;
 }

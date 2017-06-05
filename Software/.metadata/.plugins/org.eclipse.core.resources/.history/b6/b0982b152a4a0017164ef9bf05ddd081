@@ -1,0 +1,140 @@
+/*
+ * "Hello World" example.
+ *
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example
+ * designs. It runs with or without the MicroC/OS-II RTOS and requires a STDOUT
+ * device in your system's hardware.
+ * The memory footprint of this hosted application is ~69 kbytes by default
+ * using the standard reference design.
+ *
+ * For a reduced footprint version of this template, and an explanation of how
+ * to reduce the memory footprint for a given application, see the
+ * "small_hello_world" template.
+ *
+ */
+
+#include <stdio.h>
+#include "sys/alt_irq.h"
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+
+static void egm_isr(void* context, alt_u32 id)
+{
+	// Write rising edge then falling to response_out
+	IOWR(RESPONSE_OUT_BASE, 0, 0xFF);
+	IOWR(RESPONSE_OUT_BASE, 0, 0x0);
+
+	IOWR(STIMULUS_IN_BASE, 3, 0x0); // Clear stimulus_in ISR
+}
+
+int background()
+{
+	int j;
+	int x = 0;
+	int grainsize = 4;
+	int g_taskProcessed = 0;
+	for(j = 0; j < grainsize; j++){
+		g_taskProcessed++;
+	}
+	return x;
+}
+
+void isr_test(){
+	printf("Running EGM Latency test with ISR (Lab1)");
+
+	//Clear previous interrupts if any and register ISR
+	IOWR(STIMULUS_IN_BASE, 3, 0x0);
+	alt_irq_register(STIMULUS_IN_IRQ, (void*)0, egm_isr);
+
+	// Activate stimulus IRQ
+	IOWR(STIMULUS_IN_BASE, 2, 0xFF);
+
+	unsigned int period, duty_cycle, avg_latency, total_missed, bg_task_count;
+
+	for(period = 2; period <= 5000; period += 2){
+		//Turn off EGM
+		IOWR(EGM_BASE, 0, 0);
+
+		// Setup EGM
+		duty_cycle = period / 2;
+		IOWR(EGM_BASE, 2, period);
+		IOWR(EGM_BASE, 3, duty_cycle);
+
+		//Activate EGM
+		IOWR(EGM_BASE, 0, 1);
+
+		while(IORD(EGM_BASE, 1)){
+			background();
+			bg_task_count += 1;
+		}
+
+		avg_latency = IORD(EGM_BASE, 4);
+		total_missed = IORD(EGM_BASE, 5);
+
+		// Disable EGM
+		IOWR(EGM_BASE, 0, 0);
+
+		printf("period: %d, dutycycle: %d, total background tasks: %d, average latency: %d, total missed: %d\n",
+				period, duty_cycle, bg_task_count, avg_latency, total_missed);
+	}
+}
+
+// Tight poll for stimulus edge, run x amount of BG tasks, then poll again
+void polling_test(){
+	printf("Running EGM Latency test with polling (Lab1)");
+
+	//TODO:
+	// 2. Begin first cycle characterization
+	//		1. First, tight poll stimulus-in to catch the first rising edge
+	//		2. Send response
+	//		3. Do background tasks one at a time, checking for a new stimulus after each one
+	// 		4. Finally, use the amount of BG tasks as X
+	// 3. For the next cycles, tight poll, run x tasks, then poll again
+
+	unsigned int period, duty_cycle, avg_latency, total_missed, bg_task_count;
+	for(period = 2; period <= 5000; period += 2){
+		//Turn off EGM
+		IOWR(EGM_BASE, 0, 0);
+
+		// Setup EGM
+		duty_cycle = period / 2;
+		IOWR(EGM_BASE, 2, period);
+		IOWR(EGM_BASE, 3, duty_cycle);
+
+		//Activate EGM
+		IOWR(EGM_BASE, 0, 1);
+
+		// ************************************************************
+
+		while(IORD(EGM_BASE, 1)){
+			if(IORD(STIMULUS_IN_BASE, 0)){	// Poll for the first cycle's rising edge
+
+				// Send response
+				IOWR(RESPONSE_OUT_BASE, 0, 0xFF);
+				IOWR(RESPONSE_OUT_BASE, 0, 0x0);
+			}
+		}
+
+
+
+		// ************************************************************
+
+		avg_latency = IORD(EGM_BASE, 4);
+		total_missed = IORD(EGM_BASE, 5);
+
+		// Disable EGM
+		IOWR(EGM_BASE, 0, 0);
+
+		printf("period: %d, dutycycle: %d, total background tasks: %d, average latency: %d, total missed: %d\n",
+				period, duty_cycle, bg_task_count, avg_latency, total_missed);
+	}
+}
+
+int main()
+{
+	isr_test();
+	//polling_test();
+
+	return 0;
+}
