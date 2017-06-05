@@ -1651,3 +1651,60 @@ java.io.FileNotFoundException: C:\LogicalStepSVN\LogicalStep\Software\.metadata\
 	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
 	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.resources 4 568 2017-06-05 17:49:03.001
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: C:\LogicalStepSVN\LogicalStep\Software\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1709)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1792)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1167)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.resources 4 568 2017-06-05 17:54:15.216
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: C:\LogicalStepSVN\LogicalStep\Software\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1709)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1792)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1167)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-06-05 18:00:37.030
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-06-05 18:00:38.249
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001148 --id=0x0 --timestamp=1494339556]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-06-05 18:00:41.415
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001148 --id=0x0 --timestamp=1494339556 /cygdrive/c/LogicalStepSVN/LogicalStep/Software/lab1/lab1.elf]
+
+!ENTRY org.eclipse.core.resources 4 568 2017-06-05 18:00:59.170
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: C:\LogicalStepSVN\LogicalStep\Software\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1709)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1792)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1167)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)

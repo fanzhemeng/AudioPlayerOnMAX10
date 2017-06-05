@@ -19,12 +19,6 @@
 #include "system.h"
 #include "altera_avalon_pio_regs.h"
 
-#define __INTERRUPT_TEST__
-//#define __POLLING_TEST__
-
-#define __DEBUG__
-
-
 static void egm_isr(void* context, alt_u32 id) {
 	// Write rising edge then falling to response_out
 	IOWR(RESPONSE_OUT_BASE, 0, 0xFF);
@@ -45,9 +39,7 @@ int background() {
 }
 
 void isr_test() {
-#ifdef __DEBUG__
-	printf("Running EGM Latency test with ISR (Lab1)\n");
-#endif
+	printf("Running EGM Latency test with ISR (Lab1)");
 
 	//Clear previous interrupts if any and register ISR
 	IOWR(STIMULUS_IN_BASE, 3, 0x0);
@@ -83,13 +75,9 @@ void isr_test() {
 		// Disable EGM
 		IOWR(EGM_BASE, 0, 0);
 
-#ifdef __DEBUG__
 		printf(
 				"period: %d, dutycycle: %d, total background tasks: %d, average latency: %d, total missed: %d\n",
 				period, duty_cycle, bg_task_count, avg_latency, total_missed);
-#else
-		printf("%d,%d,%d,%d,%d\n", period, duty_cycle, bg_task_count, avg_latency, total_missed);
-#endif
 	}
 
 	printf("At the end of test");
@@ -97,9 +85,7 @@ void isr_test() {
 
 // Tight poll for stimulus edge, run x amount of BG tasks, then poll again
 void polling_test() {
-#ifdef __DEBUG__
 	printf("Running EGM Latency test with polling (Lab1)\n");
-#endif
 
 	unsigned int period, duty_cycle, avg_latency, total_missed, bg_task_count;
 	for (period = 2; period <= 5000; period += 1000) {
@@ -189,26 +175,17 @@ void polling_test() {
 		// Disable EGM
 		IOWR(EGM_BASE, 0, 0);
 
-#ifdef __DEBUG__
 		printf( "maxtasks: %d, period: %d, dutycycle: %d, total background tasks: %d, average latency: %d, total missed: %d\n",
 				tasks_per_cycle, period, duty_cycle, bg_task_count, avg_latency,
 				total_missed);
-#else
-		printf("%d,%d,%d,%d,%d\n", period, duty_cycle, bg_task_count, avg_latency, total_missed);
-#endif
 	}
 
 	printf("At the end of test");
 }
 
 int main() {
-
-#ifdef __INTERRUPT_TEST__
-	isr_test();
-#endif
-
-#ifdef __POLLING_TEST__
+	//isr_test();
 	polling_test();
-#endif
+
 	return 0;
 }

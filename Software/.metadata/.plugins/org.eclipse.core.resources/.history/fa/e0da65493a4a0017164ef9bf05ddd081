@@ -20,7 +20,7 @@
 #include "altera_avalon_pio_regs.h"
 
 #define __INTERRUPT_TEST__
-//#define __POLLING_TEST__
+#define __POLLING_TEST__
 
 #define __DEBUG__
 
@@ -46,7 +46,7 @@ int background() {
 
 void isr_test() {
 #ifdef __DEBUG__
-	printf("Running EGM Latency test with ISR (Lab1)\n");
+	printf("Running EGM Latency test with ISR (Lab1)");
 #endif
 
 	//Clear previous interrupts if any and register ISR
@@ -195,7 +195,6 @@ void polling_test() {
 				total_missed);
 #else
 		printf("%d,%d,%d,%d,%d\n", period, duty_cycle, bg_task_count, avg_latency, total_missed);
-#endif
 	}
 
 	printf("At the end of test");

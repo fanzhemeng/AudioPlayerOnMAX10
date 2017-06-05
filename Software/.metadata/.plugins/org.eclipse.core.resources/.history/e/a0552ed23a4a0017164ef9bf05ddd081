@@ -46,7 +46,7 @@ int background() {
 
 void isr_test() {
 #ifdef __DEBUG__
-	printf("Running EGM Latency test with ISR (Lab1)\n");
+	printf("Running EGM Latency test with ISR (Lab1)");
 #endif
 
 	//Clear previous interrupts if any and register ISR
