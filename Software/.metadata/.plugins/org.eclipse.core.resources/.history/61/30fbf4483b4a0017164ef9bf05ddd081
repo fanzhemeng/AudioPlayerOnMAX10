@@ -19,8 +19,8 @@
 #include "system.h"
 #include "altera_avalon_pio_regs.h"
 
-//#define __INTERRUPT_TEST__
-#define __POLLING_TEST__
+#define __INTERRUPT_TEST__
+//#define __POLLING_TEST__
 
 //#define __DEBUG__
 
@@ -91,6 +91,8 @@ void isr_test() {
 		printf("%d,%d,%d,%d,%d\n", period, duty_cycle, bg_task_count, avg_latency, total_missed);
 #endif
 	}
+
+	printf("At the end of test");
 }
 
 // Tight poll for stimulus edge, run x amount of BG tasks, then poll again
@@ -100,7 +102,7 @@ void polling_test() {
 #endif
 
 	unsigned int period, duty_cycle, avg_latency, total_missed, bg_task_count;
-	for (period = 2; period <= 1500; period += 2) {
+	for (period = 2; period <= 5000; period += 1000) {
 
 		//Turn off EGM
 		IOWR(EGM_BASE, 0, 0);
@@ -195,6 +197,8 @@ void polling_test() {
 		printf("%d,%d,%d,%d,%d\n", period, duty_cycle, bg_task_count, avg_latency, total_missed);
 #endif
 	}
+
+	printf("At the end of test");
 }
 
 int main() {
