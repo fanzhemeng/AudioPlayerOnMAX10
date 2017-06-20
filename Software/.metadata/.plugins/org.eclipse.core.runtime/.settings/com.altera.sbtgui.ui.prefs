@@ -1,4 +1,4 @@
 eclipse.preferences.version=1
-newSoftwareExampleWizardPage.defaultLocation=C\:\\LogicalStepSVN\\LogicalStep\\Software\\lab1
+newSoftwareExampleWizardPage.defaultLocation=C\:\\LogicalStepSVN\\LogicalStep\\software\\AudioPlayer
 newSoftwareExampleWizardPage.sopcinfoFile=C\:\\LogicalStepSVN\\LogicalStep\\LogicalStep.sopcinfo
-newSoftwareExampleWizardPage2.newBspLocation=C\:\\LogicalStepSVN\\LogicalStep\\Software\\lab1_bsp
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\LogicalStepSVN\\LogicalStep\\software\\AudioPlayer_bsp
