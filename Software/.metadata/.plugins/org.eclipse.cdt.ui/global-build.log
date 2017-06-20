@@ -1937,3 +1937,394 @@ Info: Building ../AudioPlayer_bsp/
 C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
 [BSP build complete]
 [AudioPlayer build complete]
+09:51:45 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:268:5: warning: implicit declaration of function 'alt_printf' [-Wimplicit-function-declaration]
+     alt_printf ("Error: could not open audio device \n");
+     ^
+main.c:264:18: warning: unused variable 'r_buf' [-Wunused-variable]
+     unsigned int r_buf;
+                  ^
+main.c:263:18: warning: unused variable 'l_buf' [-Wunused-variable]
+     unsigned int l_buf;
+                  ^
+main.c:252:17: warning: unused variable 'ptr2' [-Wunused-variable]
+     char *ptr, *ptr2;
+                 ^
+main.c:251:6: warning: unused variable 'fifospace' [-Wunused-variable]
+  int fifospace;
+      ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+09:51:54 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+09:55:57 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+09:56:01 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+10:05:05 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:268:5: warning: implicit declaration of function 'alt_printf' [-Wimplicit-function-declaration]
+     alt_printf ("Error: could not open audio device \n");
+     ^
+main.c:264:18: warning: unused variable 'r_buf' [-Wunused-variable]
+     unsigned int r_buf;
+                  ^
+main.c:263:18: warning: unused variable 'l_buf' [-Wunused-variable]
+     unsigned int l_buf;
+                  ^
+main.c:252:17: warning: unused variable 'ptr2' [-Wunused-variable]
+     char *ptr, *ptr2;
+                 ^
+main.c:251:6: warning: unused variable 'fifospace' [-Wunused-variable]
+  int fifospace;
+      ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+10:05:28 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+10:27:34 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:257:3: warning: implicit declaration of function 'alt_printf' [-Wimplicit-function-declaration]
+   alt_printf("Error: could not open audio device \n");
+   ^
+main.c:656:3: error: case label not within a switch statement
+   case 'h':
+   ^
+main.c:253:15: warning: unused variable 'r_buf' [-Wunused-variable]
+  unsigned int r_buf;
+               ^
+main.c:252:15: warning: unused variable 'l_buf' [-Wunused-variable]
+  unsigned int l_buf;
+               ^
+main.c:241:14: warning: unused variable 'ptr2' [-Wunused-variable]
+  char *ptr, *ptr2;
+              ^
+main.c:240:6: warning: unused variable 'fifospace' [-Wunused-variable]
+  int fifospace;
+      ^
+main.c: At top level:
+main.c:669:1: error: expected identifier or '(' before 'return'
+ return (0);
+ ^
+main.c:670:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+main.c: In function 'main':
+main.c:661:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [obj/default/main.o] Error 1
+10:27:38 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:257:3: warning: implicit declaration of function 'alt_printf' [-Wimplicit-function-declaration]
+   alt_printf("Error: could not open audio device \n");
+   ^
+main.c:656:3: error: case label not within a switch statement
+   case 'h':
+   ^
+main.c:253:15: warning: unused variable 'r_buf' [-Wunused-variable]
+  unsigned int r_buf;
+               ^
+main.c:252:15: warning: unused variable 'l_buf' [-Wunused-variable]
+  unsigned int l_buf;
+               ^
+main.c:241:14: warning: unused variable 'ptr2' [-Wunused-variable]
+  char *ptr, *ptr2;
+              ^
+main.c:240:6: warning: unused variable 'fifospace' [-Wunused-variable]
+  int fifospace;
+      ^
+main.c: At top level:
+main.c:669:1: error: expected identifier or '(' before 'return'
+ return (0);
+ ^
+main.c:670:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+main.c: In function 'main':
+main.c:661:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [obj/default/main.o] Error 1
+10:28:17 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:268:5: warning: implicit declaration of function 'alt_printf' [-Wimplicit-function-declaration]
+     alt_printf ("Error: could not open audio device \n");
+     ^
+main.c:264:18: warning: unused variable 'r_buf' [-Wunused-variable]
+     unsigned int r_buf;
+                  ^
+main.c:263:18: warning: unused variable 'l_buf' [-Wunused-variable]
+     unsigned int l_buf;
+                  ^
+main.c:252:17: warning: unused variable 'ptr2' [-Wunused-variable]
+     char *ptr, *ptr2;
+                 ^
+main.c:251:6: warning: unused variable 'fifospace' [-Wunused-variable]
+  int fifospace;
+      ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 88 KBytes program size (code + initialized data).
+Info:                   8096 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+10:28:26 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+11:17:14 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:268:5: warning: implicit declaration of function 'alt_printf' [-Wimplicit-function-declaration]
+     alt_printf ("Error: could not open audio device \n");
+     ^
+main.c:601:57: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                      alt_up_audio_write_fifo(audio_dev, &(Buff), 1, ALT_UP_AUDIO_LEFT);
+                                                         ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[8192]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:603:57: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                      alt_up_audio_write_fifo(audio_dev, &(Buff), 1, ALT_UP_AUDIO_RIGHT);
+                                                         ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[8192]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:571:30: warning: unused variable 'r_buf' [-Wunused-variable]
+                 unsigned int r_buf;
+                              ^
+main.c:570:30: warning: unused variable 'l_buf' [-Wunused-variable]
+                 unsigned int l_buf;
+                              ^
+main.c:264:18: warning: unused variable 'r_buf' [-Wunused-variable]
+     unsigned int r_buf;
+                  ^
+main.c:263:18: warning: unused variable 'l_buf' [-Wunused-variable]
+     unsigned int l_buf;
+                  ^
+main.c:252:17: warning: unused variable 'ptr2' [-Wunused-variable]
+     char *ptr, *ptr2;
+                 ^
+main.c:251:6: warning: unused variable 'fifospace' [-Wunused-variable]
+  int fifospace;
+      ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 88 KBytes program size (code + initialized data).
+Info:                   8095 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+11:17:21 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+11:23:48 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:268:5: warning: implicit declaration of function 'alt_printf' [-Wimplicit-function-declaration]
+     alt_printf ("Error: could not open audio device \n");
+     ^
+main.c:264:18: warning: unused variable 'r_buf' [-Wunused-variable]
+     unsigned int r_buf;
+                  ^
+main.c:263:18: warning: unused variable 'l_buf' [-Wunused-variable]
+     unsigned int l_buf;
+                  ^
+main.c:252:17: warning: unused variable 'ptr2' [-Wunused-variable]
+     char *ptr, *ptr2;
+                 ^
+main.c:251:6: warning: unused variable 'fifospace' [-Wunused-variable]
+  int fifospace;
+      ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 88 KBytes program size (code + initialized data).
+Info:                   8095 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+11:23:54 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+11:25:56 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:268:5: warning: implicit declaration of function 'alt_printf' [-Wimplicit-function-declaration]
+     alt_printf ("Error: could not open audio device \n");
+     ^
+main.c:602:42: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+                     l_buf = Buff[0] << 8 + Buff[1];
+                                          ^
+main.c:603:42: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+                     r_buf = Buff[2] << 8 + Buff[3];
+                                          ^
+main.c:264:18: warning: unused variable 'r_buf' [-Wunused-variable]
+     unsigned int r_buf;
+                  ^
+main.c:263:18: warning: unused variable 'l_buf' [-Wunused-variable]
+     unsigned int l_buf;
+                  ^
+main.c:252:17: warning: unused variable 'ptr2' [-Wunused-variable]
+     char *ptr, *ptr2;
+                 ^
+main.c:251:6: warning: unused variable 'fifospace' [-Wunused-variable]
+  int fifospace;
+      ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 88 KBytes program size (code + initialized data).
+Info:                   8095 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+11:26:03 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+11:31:14 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:268:5: warning: implicit declaration of function 'alt_printf' [-Wimplicit-function-declaration]
+     alt_printf ("Error: could not open audio device \n");
+     ^
+main.c:608:56: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                     alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+                                                        ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:609:56: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                     alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+                                                        ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:264:18: warning: unused variable 'r_buf' [-Wunused-variable]
+     unsigned int r_buf;
+                  ^
+main.c:263:18: warning: unused variable 'l_buf' [-Wunused-variable]
+     unsigned int l_buf;
+                  ^
+main.c:252:17: warning: unused variable 'ptr2' [-Wunused-variable]
+     char *ptr, *ptr2;
+                 ^
+main.c:251:6: warning: unused variable 'fifospace' [-Wunused-variable]
+  int fifospace;
+      ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 88 KBytes program size (code + initialized data).
+Info:                   8095 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+11:31:22 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
