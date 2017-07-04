@@ -71,6 +71,7 @@
 /*=========================================================================*/
 
 #define PSTR(_a)  _a
+#define BUFFER_SIZE 8
 
 /*=========================================================================*/
 /*  DEFINE: Prototypes                                                     */
@@ -258,10 +259,13 @@ int main(void)
     uint32_t ofs = 0, sect = 0, blk[2];
     FATFS *fs;                  /* Pointer to file system object */
 
+    uint8_t l_buf[2];
+    uint8_t r_buf[2];
+
     alt_up_audio_dev * audio_dev;
     /* used for audio record/playback */
-    unsigned int l_buf;
-    unsigned int r_buf;
+    //unsigned int l_buf;
+    //unsigned int r_buf;
     // open the Audio port
     audio_dev = alt_up_audio_open_dev ("/dev/Audio");
     if ( audio_dev == NULL)
@@ -566,10 +570,6 @@ int main(void)
                 // File pointer
                 ofs = File1.fptr;
 
-                alt_up_audio_dev * audio_dev;
-                uint8_t l_buf[2];
-                uint8_t r_buf[2];
-
                 // open the Audio device
                 audio_dev = alt_up_audio_open_dev("/dev/Audio");
                 if (audio_dev == NULL)
@@ -577,13 +577,12 @@ int main(void)
                 else
                		alt_printf("Opened audio device \n");
 
-                //int isOddTurn = 1;
                 // p1 is the number of bytes to read from the file
                 // We read 4 bytes at a time, 2 for left and 2 for right
                 while (p1>0) {
-                    if ((uint32_t) p1 >= 4) {
-                        cnt = 4;
-                        p1 -= 4;
+                    if ((uint32_t) p1 >= BUFFER_SIZE) {
+                        cnt = BUFFER_SIZE;
+                        p1 -= BUFFER_SIZE;
                     } else {
                         cnt = p1;
                         p1 = 0;
@@ -597,25 +596,91 @@ int main(void)
                         break;
 
         			// write buffers to audio interface
+                    uint8_t *cursor;
+                    for(cursor = Buff; cursor < Buff + BUFFER_SIZE; cursor += 4){
 
-                    // Implementation 1
-                    l_buf[0] = Buff[0];
-                    l_buf[1] = Buff[1];
+//                    	while(alt_up_audio_read_fifo_avail(audio_dev, ALT_UP_AUDIO_LEFT) < 1 ||
+//                    		  alt_up_audio_read_fifo_avail(audio_dev, ALT_UP_AUDIO_RIGHT) < 1){
+//                    		// Wait until fifo has space
+//                    	}
 
-                    r_buf[0] = Buff[2];
-                    r_buf[1] = Buff[3];
+                        l_buf[0] = cursor[0];
+                        l_buf[1] = cursor[1];
 
-                    alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
-                    alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+                        r_buf[0] = cursor[2];
+                        r_buf[1] = cursor[3];
 
-                    // Implementation 2
-//                    if (isOddTurn) {
-//                    	alt_up_audio_write_fifo(audio_dev, &(Buff), 1, ALT_UP_AUDIO_LEFT);
-//                    } else {
-//                    	alt_up_audio_write_fifo(audio_dev, &(Buff), 1, ALT_UP_AUDIO_RIGHT);
-//                    }
-//                    isOddTurn = 1 - isOddTurn;
-                    ofs += 4;
+                        alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+                        alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+
+//                        alt_up_audio_play_r(audio_dev, r_buf, 1);
+//                        alt_up_audio_play_l(audio_dev, l_buf, 1);
+
+                    }
+                    ofs += BUFFER_SIZE;
+                }
+                break;
+
+            case 'b':          /* fb <len> - play file backwards */
+                if (!xatoi(&ptr, &p1))
+                    break;
+
+                // open the Audio device
+                audio_dev = alt_up_audio_open_dev("/dev/Audio");
+                if (audio_dev == NULL)
+                	alt_printf("Error: could not open audio device \n");
+                else
+               		alt_printf("Opened audio device \n");
+
+                // Start from the end of the file
+                res = f_lseek(&File1, f_size(&File1) - BUFFER_SIZE);
+                if (res != FR_OK) {
+                    put_rc(res);
+                    break;
+                }
+
+                // p1 is the number of bytes to read from the file
+                // We read 4 bytes at a time, 2 for left and 2 for right
+                while (p1>0) {
+                    if ((uint32_t) p1 >= BUFFER_SIZE) {
+                        cnt = BUFFER_SIZE;
+                        p1 -= BUFFER_SIZE;
+                    } else {
+                        cnt = p1;
+                        p1 = 0;
+                    }
+                    res = f_read(&File1, Buff, cnt, &cnt);
+                    if (res != FR_OK) {
+                        put_rc(res);
+                        break;
+                    }
+                    if (!cnt)
+                        break;
+
+        			// write buffers to audio interface
+                    uint8_t *cursor;
+                    for(cursor = Buff + BUFFER_SIZE - 4; cursor >= Buff; cursor -= 4){
+
+//                    	while(alt_up_audio_read_fifo_avail(audio_dev, ALT_UP_AUDIO_LEFT) < 1 ||
+//                    		  alt_up_audio_read_fifo_avail(audio_dev, ALT_UP_AUDIO_RIGHT) < 1){
+//                    		// Wait until fifo has space
+//                    	}
+
+                        l_buf[0] = cursor[0];
+                        l_buf[1] = cursor[1];
+
+                        r_buf[0] = cursor[2];
+                        r_buf[1] = cursor[3];
+
+                        alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+                        alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+
+//                        alt_up_audio_play_r(audio_dev, r_buf, 1);
+//                        alt_up_audio_play_l(audio_dev, l_buf, 1);
+
+                    }
+
+                    f_lseek(&File1, f_tell(&File1) - 2*BUFFER_SIZE);
                 }
                 break;
 
