@@ -1,0 +1,38 @@
+//#include <stdio.h>
+//#include <stdlib.h>
+#include <string.h>
+//#include <stdint.h>
+//
+//#include <system.h>
+//#include <sys/alt_alarm.h>
+//#include <io.h>
+//
+//#include "fatfs.h"
+//#include "diskio.h"
+//
+//#include "ff.h"
+//#include "monitor.h"
+//#include "uart.h"
+//
+//#include "alt_types.h"
+//
+//#include <altera_up_avalon_audio.h>
+//#include <altera_up_avalon_audio_and_video_config.h>
+
+// Checks a filename if it is a vaild .wav filename
+int isWav(const char *filename){
+  const char *suffix = ".wav"; // Length of 4
+  const size_t suffixlen = 4;
+
+  if(!filename){
+    return 0; // filename is null
+  }
+
+  size_t namelen = strlen(filename);
+  return strncmp(filename + namelen - suffixlen, suffix, suffixlen) == 0;
+}
+
+
+int main()
+
+

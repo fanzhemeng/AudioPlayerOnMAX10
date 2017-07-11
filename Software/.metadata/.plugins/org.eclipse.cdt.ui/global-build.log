@@ -3797,3 +3797,1980 @@ Info: Building ../AudioPlayer_bsp/
 C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
 [BSP build complete]
 [AudioPlayer build complete]
+16:21:12 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+16:21:22 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+16:22:28 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+16:22:31 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+17:57:12 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+17:57:17 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+17:58:26 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+17:58:30 **** Build of configuration Nios II for project AudioPlayer_bsp ****
+make all 
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [makefile] Error 1
+17:58:33 **** Build of configuration Nios II for project board_diagnostics ****
+make all 
+Info: Building ../board_diagnostics_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../board_diagnostics_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../board_diagnostics_bsp/-recurs-make-lib] Error 2
+17:58:36 **** Build of configuration Nios II for project board_diagnostics_bsp ****
+make all 
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [makefile] Error 1
+17:58:38 **** Build of configuration Nios II for project lab1 ****
+make all 
+Info: Building ../lab1_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../lab1_bsp/-recurs-make-lib] Error 2
+17:58:42 **** Build of configuration Nios II for project lab1_bsp ****
+make all 
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [makefile] Error 1
+17:58:54 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+Command canceled
+17:59:50 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+17:59:53 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+18:00:31 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+18:00:35 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+18:01:19 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+18:01:23 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+18:03:33 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+18:03:36 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../AudioPlayer_bsp/-recurs-make-lib] Error 2
+18:05:13 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+Compiling alt_alarm_start.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
+Compiling alt_busy_sleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_busy_sleep.o HAL/src/alt_busy_sleep.c
+Compiling alt_close.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_close.o HAL/src/alt_close.c
+Compiling alt_dcache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush.o HAL/src/alt_dcache_flush.c
+Compiling alt_dcache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush_all.o HAL/src/alt_dcache_flush_all.c
+Compiling alt_dcache_flush_no_writeback.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush_no_writeback.o HAL/src/alt_dcache_flush_no_writeback.c
+Compiling alt_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dev.o HAL/src/alt_dev.c
+Compiling alt_dma_rxchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dma_rxchan_open.o HAL/src/alt_dma_rxchan_open.c
+Compiling alt_dma_txchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dma_txchan_open.o HAL/src/alt_dma_txchan_open.c
+Compiling alt_ecc_fatal_exception.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_ecc_fatal_exception.o HAL/src/alt_ecc_fatal_exception.c
+Compiling alt_exception_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_entry.o HAL/src/alt_exception_entry.S
+Compiling alt_exit.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_exit.o HAL/src/alt_exit.c
+Compiling alt_fcntl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fcntl.o HAL/src/alt_fcntl.c
+Compiling alt_fd_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fd_lock.o HAL/src/alt_fd_lock.c
+Compiling alt_fd_unlock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fd_unlock.o HAL/src/alt_fd_unlock.c
+Compiling alt_find_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_find_dev.o HAL/src/alt_find_dev.c
+Compiling alt_find_file.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_find_file.o HAL/src/alt_find_file.c
+Compiling alt_flash_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_flash_dev.o HAL/src/alt_flash_dev.c
+Compiling alt_fs_reg.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fs_reg.o HAL/src/alt_fs_reg.c
+Compiling alt_fstat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fstat.o HAL/src/alt_fstat.c
+Compiling alt_get_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_get_fd.o HAL/src/alt_get_fd.c
+Compiling alt_gmon.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_gmon.o HAL/src/alt_gmon.c
+Compiling alt_icache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_icache_flush.o HAL/src/alt_icache_flush.c
+Compiling alt_icache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_icache_flush_all.o HAL/src/alt_icache_flush_all.c
+Compiling alt_iic.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_iic.o HAL/src/alt_iic.c
+Compiling alt_iic_isr_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_iic_isr_register.o HAL/src/alt_iic_isr_register.c
+Compiling alt_instruction_exception_entry.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_instruction_exception_entry.o HAL/src/alt_instruction_exception_entry.c
+Compiling alt_instruction_exception_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_instruction_exception_register.o HAL/src/alt_instruction_exception_register.c
+Compiling alt_io_redirect.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_io_redirect.o HAL/src/alt_io_redirect.c
+Compiling alt_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_ioctl.o HAL/src/alt_ioctl.c
+Compiling alt_irq_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_irq_entry.o HAL/src/alt_irq_entry.S
+Compiling alt_irq_handler.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_handler.o HAL/src/alt_irq_handler.c
+Compiling alt_irq_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_register.o HAL/src/alt_irq_register.c
+Compiling alt_irq_vars.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_vars.o HAL/src/alt_irq_vars.c
+Compiling alt_isatty.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_isatty.o HAL/src/alt_isatty.c
+Compiling alt_lseek.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_lseek.o HAL/src/alt_lseek.c
+Compiling alt_main.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_main.o HAL/src/alt_main.c
+Compiling alt_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_open.o HAL/src/alt_open.c
+Compiling alt_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_read.o HAL/src/alt_read.c
+Compiling alt_release_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_release_fd.o HAL/src/alt_release_fd.c
+Compiling alt_remap_cached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_remap_cached.o HAL/src/alt_remap_cached.c
+Compiling alt_remap_uncached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_remap_uncached.o HAL/src/alt_remap_uncached.c
+Compiling alt_sbrk.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_sbrk.o HAL/src/alt_sbrk.c
+Compiling alt_software_exception.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_software_exception.o HAL/src/alt_software_exception.S
+Compiling alt_tick.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_tick.o HAL/src/alt_tick.c
+Compiling alt_uncached_free.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_uncached_free.o HAL/src/alt_uncached_free.c
+Compiling alt_uncached_malloc.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_uncached_malloc.o HAL/src/alt_uncached_malloc.c
+Compiling alt_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_write.o HAL/src/alt_write.c
+Compiling altera_nios2_gen2_irq.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/altera_nios2_gen2_irq.o HAL/src/altera_nios2_gen2_irq.c
+Compiling crt0.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/crt0.o HAL/src/crt0.S
+Compiling alt_sys_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/alt_sys_init.o alt_sys_init.c
+Compiling altera_avalon_jtag_uart_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_fd.o drivers/src/altera_avalon_jtag_uart_fd.c
+Compiling altera_avalon_jtag_uart_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_init.o drivers/src/altera_avalon_jtag_uart_init.c
+Compiling altera_avalon_jtag_uart_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o drivers/src/altera_avalon_jtag_uart_ioctl.c
+Compiling altera_avalon_jtag_uart_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_read.o drivers/src/altera_avalon_jtag_uart_read.c
+Compiling altera_avalon_jtag_uart_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_write.o drivers/src/altera_avalon_jtag_uart_write.c
+Compiling altera_avalon_lcd_16207.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_lcd_16207.o drivers/src/altera_avalon_lcd_16207.c
+drivers/src/altera_avalon_lcd_16207.c: In function 'lcd_handle_escape':
+drivers/src/altera_avalon_lcd_16207.c:293:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+     while (isdigit(*ptr))
+     ^
+drivers/src/altera_avalon_lcd_16207.c:299:7: warning: array subscript has type 'char' [-Wchar-subscripts]
+       while (isdigit(*ptr))
+       ^
+drivers/src/altera_avalon_lcd_16207.c: In function 'altera_avalon_lcd_16207_write':
+drivers/src/altera_avalon_lcd_16207.c:380:11: warning: array subscript has type 'char' [-Wchar-subscripts]
+           (esccount > 0 && !isdigit(c) && c != ';'))
+           ^
+drivers/src/altera_avalon_lcd_16207.c:418:5: warning: array subscript has type 'char' [-Wchar-subscripts]
+     else if (isprint(c))
+     ^
+Compiling altera_avalon_lcd_16207_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_lcd_16207_fd.o drivers/src/altera_avalon_lcd_16207_fd.c
+Compiling altera_avalon_sysid_qsys.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_sysid_qsys.o drivers/src/altera_avalon_sysid_qsys.c
+Compiling altera_avalon_timer_sc.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_timer_sc.o drivers/src/altera_avalon_timer_sc.c
+Compiling altera_avalon_timer_ts.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_timer_ts.o drivers/src/altera_avalon_timer_ts.c
+Compiling altera_avalon_timer_vars.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_timer_vars.o drivers/src/altera_avalon_timer_vars.c
+Compiling altera_avalon_uart_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_uart_fd.o drivers/src/altera_avalon_uart_fd.c
+Compiling altera_avalon_uart_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_uart_init.o drivers/src/altera_avalon_uart_init.c
+Compiling altera_avalon_uart_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_uart_ioctl.o drivers/src/altera_avalon_uart_ioctl.c
+Compiling altera_avalon_uart_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_uart_read.o drivers/src/altera_avalon_uart_read.c
+Compiling altera_avalon_uart_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_uart_write.o drivers/src/altera_avalon_uart_write.c
+Compiling altera_up_avalon_audio.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_up_avalon_audio.o drivers/src/altera_up_avalon_audio.c
+Compiling altera_up_avalon_audio_and_video_config.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_up_avalon_audio_and_video_config.o drivers/src/altera_up_avalon_audio_and_video_config.c
+Creating libhal_bsp.a...
+rm -f -f libhal_bsp.a
+nios2-elf-ar -src libhal_bsp.a obj/HAL/src/alt_alarm_start.o obj/HAL/src/alt_busy_sleep.o obj/HAL/src/alt_close.o obj/HAL/src/alt_dcache_flush.o obj/HAL/src/alt_dcache_flush_all.o obj/HAL/src/alt_dcache_flush_no_writeback.o obj/HAL/src/alt_dev.o obj/HAL/src/alt_dev_llist_insert.o obj/HAL/src/alt_dma_rxchan_open.o obj/HAL/src/alt_dma_txchan_open.o obj/HAL/src/alt_do_ctors.o obj/HAL/src/alt_do_dtors.o obj/HAL/src/alt_ecc_fatal_entry.o obj/HAL/src/alt_ecc_fatal_exception.o obj/HAL/src/alt_env_lock.o obj/HAL/src/alt_environ.o obj/HAL/src/alt_errno.o obj/HAL/src/alt_exception_entry.o obj/HAL/src/alt_exception_muldiv.o obj/HAL/src/alt_exception_trap.o obj/HAL/src/alt_execve.o obj/HAL/src/alt_exit.o obj/HAL/src/alt_fcntl.o obj/HAL/src/alt_fd_lock.o obj/HAL/src/alt_fd_unlock.o obj/HAL/src/alt_find_dev.o obj/HAL/src/alt_find_file.o obj/HAL/src/alt_flash_dev.o obj/HAL/src/alt_fork.o obj/HAL/src/alt_fs_reg.o obj/HAL/src/alt_fstat.o obj/HAL/src/alt_get_fd.o obj/HAL/src/alt_getchar.o obj/HAL/src/alt_getpid.o obj/HAL/src/alt_gettod.o obj/HAL/src/alt_gmon.o obj/HAL/src/alt_icache_flush.o obj/HAL/src/alt_icache_flush_all.o obj/HAL/src/alt_iic.o obj/HAL/src/alt_iic_isr_register.o obj/HAL/src/alt_instruction_exception_entry.o obj/HAL/src/alt_instruction_exception_register.o obj/HAL/src/alt_io_redirect.o obj/HAL/src/alt_ioctl.o obj/HAL/src/alt_irq_entry.o obj/HAL/src/alt_irq_handler.o obj/HAL/src/alt_irq_register.o obj/HAL/src/alt_irq_vars.o obj/HAL/src/alt_isatty.o obj/HAL/src/alt_kill.o obj/HAL/src/alt_link.o obj/HAL/src/alt_load.o obj/HAL/src/alt_log_macro.o obj/HAL/src/alt_log_printf.o obj/HAL/src/alt_lseek.o obj/HAL/src/alt_main.o obj/HAL/src/alt_malloc_lock.o obj/HAL/src/alt_mcount.o obj/HAL/src/alt_open.o obj/HAL/src/alt_printf.o obj/HAL/src/alt_putchar.o obj/HAL/src/alt_putcharbuf.o obj/HAL/src/alt_putstr.o obj/HAL/src/alt_read.o obj/HAL/src/alt_release_fd.o obj/HAL/src/alt_remap_cached.o obj/HAL/src/alt_remap_uncached.o obj/HAL/src/alt_rename.o obj/HAL/src/alt_sbrk.o obj/HAL/src/alt_settod.o obj/HAL/src/alt_software_exception.o obj/HAL/src/alt_stat.o obj/HAL/src/alt_tick.o obj/HAL/src/alt_times.o obj/HAL/src/alt_uncached_free.o obj/HAL/src/alt_uncached_malloc.o obj/HAL/src/alt_unlink.o obj/HAL/src/alt_usleep.o obj/HAL/src/alt_wait.o obj/HAL/src/alt_write.o obj/HAL/src/altera_nios2_gen2_irq.o obj/HAL/src/crt0.o obj/alt_sys_init.o obj/drivers/src/altera_avalon_jtag_uart_fd.o obj/drivers/src/altera_avalon_jtag_uart_init.o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o obj/drivers/src/altera_avalon_jtag_uart_read.o obj/drivers/src/altera_avalon_jtag_uart_write.o obj/drivers/src/altera_avalon_lcd_16207.o obj/drivers/src/altera_avalon_lcd_16207_fd.o obj/drivers/src/altera_avalon_sysid_qsys.o obj/drivers/src/altera_avalon_timer_sc.o obj/drivers/src/altera_avalon_timer_ts.o obj/drivers/src/altera_avalon_timer_vars.o obj/drivers/src/altera_avalon_uart_fd.o obj/drivers/src/altera_avalon_uart_init.o obj/drivers/src/altera_avalon_uart_ioctl.o obj/drivers/src/altera_avalon_uart_read.o obj/drivers/src/altera_avalon_uart_write.o obj/drivers/src/altera_up_avalon_audio.o obj/drivers/src/altera_up_avalon_audio_and_video_config.o
+[BSP build complete]
+Info: Compiling fatfs_diskio.c to obj/default/fatfs_diskio.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/fatfs_diskio.o fatfs_diskio.c
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:272:5: warning: implicit declaration of function 'alt_printf' [-Wimplicit-function-declaration]
+     alt_printf ("Error: could not open audio device \n");
+     ^
+main.c:615:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:616:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:677:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:678:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:253:17: warning: unused variable 'ptr2' [-Wunused-variable]
+     char *ptr, *ptr2;
+                 ^
+main.c:252:6: warning: unused variable 'fifospace' [-Wunused-variable]
+  int fifospace;
+      ^
+Info: Compiling uart_nios2.c to obj/default/uart_nios2.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/uart_nios2.o uart_nios2.c
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 89 KBytes program size (code + initialized data).
+Info:                   8095 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+18:05:32 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+18:07:06 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:272:5: warning: implicit declaration of function 'alt_printf' [-Wimplicit-function-declaration]
+     alt_printf ("Error: could not open audio device \n");
+     ^
+main.c:615:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:616:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:677:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:678:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:253:17: warning: unused variable 'ptr2' [-Wunused-variable]
+     char *ptr, *ptr2;
+                 ^
+main.c:252:6: warning: unused variable 'fifospace' [-Wunused-variable]
+  int fifospace;
+      ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 89 KBytes program size (code + initialized data).
+Info:                   8095 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+18:07:12 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+18:12:23 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'loadSongs':
+hello_world.c:88:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c:89:11: warning: passing argument 1 of 'xprintf' makes pointer from integer without a cast
+   xprintf(result);
+           ^
+In file included from hello_world.c:22:0:
+monitor.h:12:6: note: expected 'const char *' but argument is of type 'int'
+ void xprintf (const char*, ...);
+      ^
+hello_world.c:93:2: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+  for(int i =0; i < SONG_COUNT; i++){
+  ^
+hello_world.c:93:2: note: use option -std=c99, -std=gnu99, -std=c11 or -std=gnu11 to compile your code
+hello_world.c: In function 'LCDprint':
+hello_world.c:120:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  fprintf(lcd, "%d %s", trackNumber, fname);
+  ^
+hello_world.c:120:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+hello_world.c: At top level:
+hello_world.c:55:13: warning: 'put_rc' defined but not used [-Wunused-function]
+ static void put_rc(FRESULT rc) {
+             ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [obj/default/hello_world.o] Error 1
+18:12:27 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'loadSongs':
+hello_world.c:88:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c:89:11: warning: passing argument 1 of 'xprintf' makes pointer from integer without a cast
+   xprintf(result);
+           ^
+In file included from hello_world.c:22:0:
+monitor.h:12:6: note: expected 'const char *' but argument is of type 'int'
+ void xprintf (const char*, ...);
+      ^
+hello_world.c:93:2: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+  for(int i =0; i < SONG_COUNT; i++){
+  ^
+hello_world.c:93:2: note: use option -std=c99, -std=gnu99, -std=c11 or -std=gnu11 to compile your code
+hello_world.c: In function 'LCDprint':
+hello_world.c:120:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  fprintf(lcd, "%d %s", trackNumber, fname);
+  ^
+hello_world.c:120:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+hello_world.c: At top level:
+hello_world.c:55:13: warning: 'put_rc' defined but not used [-Wunused-function]
+ static void put_rc(FRESULT rc) {
+             ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [obj/default/hello_world.o] Error 1
+18:13:37 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'loadSongs':
+hello_world.c:88:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c:89:11: warning: passing argument 1 of 'xprintf' makes pointer from integer without a cast
+   xprintf(result);
+           ^
+In file included from hello_world.c:22:0:
+monitor.h:12:6: note: expected 'const char *' but argument is of type 'int'
+ void xprintf (const char*, ...);
+      ^
+hello_world.c:93:2: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+  for(int i =0; i < SONG_COUNT; i++){
+  ^
+hello_world.c:93:2: note: use option -std=c99, -std=gnu99, -std=c11 or -std=gnu11 to compile your code
+hello_world.c: In function 'LCDprint':
+hello_world.c:120:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  fprintf(lcd, "%d %s", trackNumber, fname);
+  ^
+hello_world.c:120:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+hello_world.c: At top level:
+hello_world.c:55:13: warning: 'put_rc' defined but not used [-Wunused-function]
+ static void put_rc(FRESULT rc) {
+             ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [obj/default/hello_world.o] Error 1
+18:13:42 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'loadSongs':
+hello_world.c:88:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c:89:11: warning: passing argument 1 of 'xprintf' makes pointer from integer without a cast
+   xprintf(result);
+           ^
+In file included from hello_world.c:22:0:
+monitor.h:12:6: note: expected 'const char *' but argument is of type 'int'
+ void xprintf (const char*, ...);
+      ^
+hello_world.c:93:2: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+  for(int i =0; i < SONG_COUNT; i++){
+  ^
+hello_world.c:93:2: note: use option -std=c99, -std=gnu99, -std=c11 or -std=gnu11 to compile your code
+hello_world.c: In function 'LCDprint':
+hello_world.c:120:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  fprintf(lcd, "%d %s", trackNumber, fname);
+  ^
+hello_world.c:120:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+hello_world.c: At top level:
+hello_world.c:55:13: warning: 'put_rc' defined but not used [-Wunused-function]
+ static void put_rc(FRESULT rc) {
+             ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [obj/default/hello_world.o] Error 1
+18:14:47 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'loadSongs':
+hello_world.c:89:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c:90:11: warning: passing argument 1 of 'xprintf' makes pointer from integer without a cast
+   xprintf(result);
+           ^
+In file included from hello_world.c:22:0:
+monitor.h:12:6: note: expected 'const char *' but argument is of type 'int'
+ void xprintf (const char*, ...);
+      ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:121:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  fprintf(lcd, "%d %s", trackNumber, fname);
+  ^
+hello_world.c:121:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+hello_world.c: At top level:
+hello_world.c:55:13: warning: 'put_rc' defined but not used [-Wunused-function]
+ static void put_rc(FRESULT rc) {
+             ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:123:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:272:5: warning: implicit declaration of function 'alt_printf' [-Wimplicit-function-declaration]
+     alt_printf ("Error: could not open audio device \n");
+     ^
+main.c:615:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:616:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:677:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:678:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:253:17: warning: unused variable 'ptr2' [-Wunused-variable]
+     char *ptr, *ptr2;
+                 ^
+main.c:252:6: warning: unused variable 'fifospace' [-Wunused-variable]
+  int fifospace;
+      ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 133 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+18:14:55 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+18:24:18 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'loadSongs':
+hello_world.c:90:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c:91:11: warning: passing argument 1 of 'xprintf' makes pointer from integer without a cast
+   xprintf(result);
+           ^
+In file included from hello_world.c:22:0:
+monitor.h:12:6: note: expected 'const char *' but argument is of type 'int'
+ void xprintf (const char*, ...);
+      ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:127:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  fprintf(lcd, "%d %s", trackNumber, fname);
+  ^
+hello_world.c:127:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+hello_world.c:129:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+hello_world.c: In function 'main':
+hello_world.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'notmain':
+main.c:272:5: warning: implicit declaration of function 'alt_printf' [-Wimplicit-function-declaration]
+     alt_printf ("Error: could not open audio device \n");
+     ^
+main.c:615:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:616:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:677:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:678:60: warning: passing argument 2 of 'alt_up_audio_write_fifo' from incompatible pointer type
+                         alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+                                                            ^
+In file included from main.c:62:0:
+../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio.h:191:5: note: expected 'unsigned int *' but argument is of type 'uint8_t (*)[2]'
+ int alt_up_audio_write_fifo(alt_up_audio_dev *audio, unsigned int *buf, int len, int channel);
+     ^
+main.c:253:17: warning: unused variable 'ptr2' [-Wunused-variable]
+     char *ptr, *ptr2;
+                 ^
+main.c:252:6: warning: unused variable 'fifospace' [-Wunused-variable]
+  int fifospace;
+      ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 133 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+18:24:26 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+18:27:04 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'loadSongs':
+hello_world.c:90:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c:91:11: warning: passing argument 1 of 'xprintf' makes pointer from integer without a cast
+   xprintf(result);
+           ^
+In file included from hello_world.c:22:0:
+monitor.h:12:6: note: expected 'const char *' but argument is of type 'int'
+ void xprintf (const char*, ...);
+      ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:127:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  fprintf(lcd, "%d %s", trackNumber, fname);
+  ^
+hello_world.c:127:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+hello_world.c:129:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+hello_world.c: In function 'main':
+hello_world.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 133 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+18:27:11 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+18:29:11 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'loadSongs':
+hello_world.c:91:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c:99:48: error: expected ')' before ';' token
+  xprintf("Directory loaded, loading songs: \n");
+                                                ^
+hello_world.c:119:1: error: invalid use of void expression
+ }
+ ^
+hello_world.c:119:1: error: expected ';' before '}' token
+hello_world.c:88:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+hello_world.c:85:10: warning: unused variable 'fileInfo' [-Wunused-variable]
+  FILINFO fileInfo;
+          ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:132:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  fprintf(lcd, "%d %s", trackNumber, fname);
+  ^
+hello_world.c:132:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+hello_world.c: In function 'loadSongs':
+hello_world.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+hello_world.c: In function 'main':
+hello_world.c:149:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [obj/default/hello_world.o] Error 1
+18:29:15 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'loadSongs':
+hello_world.c:91:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c:99:48: error: expected ')' before ';' token
+  xprintf("Directory loaded, loading songs: \n");
+                                                ^
+hello_world.c:119:1: error: invalid use of void expression
+ }
+ ^
+hello_world.c:119:1: error: expected ';' before '}' token
+hello_world.c:88:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+hello_world.c:85:10: warning: unused variable 'fileInfo' [-Wunused-variable]
+  FILINFO fileInfo;
+          ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:132:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  fprintf(lcd, "%d %s", trackNumber, fname);
+  ^
+hello_world.c:132:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+hello_world.c: In function 'loadSongs':
+hello_world.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+hello_world.c: In function 'main':
+hello_world.c:149:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [obj/default/hello_world.o] Error 1
+18:29:46 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'loadSongs':
+hello_world.c:91:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:129:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  fprintf(lcd, "%d %s", trackNumber, fname);
+  ^
+hello_world.c:129:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+hello_world.c:131:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+hello_world.c: In function 'main':
+hello_world.c:146:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+18:29:52 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+18:32:39 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'loadSongs':
+hello_world.c:91:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:132:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  fprintf(lcd, "%d %s", trackNumber, fname);
+  ^
+hello_world.c:132:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+hello_world.c:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+hello_world.c: In function 'main':
+hello_world.c:149:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+18:32:46 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+18:34:59 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'loadSongs':
+hello_world.c:91:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:131:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  fprintf(lcd, "%d %s", trackNumber, fname);
+  ^
+hello_world.c:131:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+hello_world.c:133:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+hello_world.c: In function 'main':
+hello_world.c:148:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+18:35:06 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+18:37:20 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'loadSongs':
+hello_world.c:91:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:131:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  fprintf(lcd, "%d %s", trackNumber, fname);
+  ^
+hello_world.c:131:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+hello_world.c:133:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+hello_world.c: In function 'main':
+hello_world.c:148:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+18:37:26 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+18:39:02 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'loadSongs':
+hello_world.c:91:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:131:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  fprintf(lcd, "%d %s", trackNumber, fname);
+  ^
+hello_world.c:131:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+hello_world.c:133:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+hello_world.c: In function 'main':
+hello_world.c:147:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 133 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+18:39:09 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+18:54:03 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'loadSongs':
+hello_world.c:99:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:139:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+  fprintf(lcd, "%d %s", trackNumber, fname);
+  ^
+hello_world.c:139:2: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+hello_world.c: In function 'main':
+hello_world.c:156:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, button_isr);
+  ^
+hello_world.c: In function 'LCDprint':
+hello_world.c:141:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 133 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+18:54:10 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+18:55:07 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+18:55:11 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+19:59:42 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'main':
+hello_world.c:169:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:160:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:155:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+19:59:48 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+20:01:09 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'main':
+hello_world.c:169:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:160:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:155:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+20:01:15 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+20:03:56 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'main':
+hello_world.c:171:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:162:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:157:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+20:04:03 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+20:05:10 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'main':
+hello_world.c:172:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:163:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:158:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+20:05:16 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+20:05:51 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'main':
+hello_world.c:171:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:162:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:157:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+20:05:58 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+20:06:45 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'main':
+hello_world.c:171:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:162:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:157:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+20:06:53 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+20:08:20 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'main':
+hello_world.c:171:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:162:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:157:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+20:08:27 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+20:10:19 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c:126:6: error: redeclaration of 'i' with no linkage
+  int i = 0;
+      ^
+hello_world.c:119:6: note: previous declaration of 'i' was here
+  int i;
+      ^
+hello_world.c:139:4: error: expected ';' before 'songs'
+    songs[i].filename = fileInfo.fname;
+    ^
+hello_world.c: In function 'main':
+hello_world.c:174:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:165:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:160:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [obj/default/hello_world.o] Error 1
+20:10:23 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c:126:6: error: redeclaration of 'i' with no linkage
+  int i = 0;
+      ^
+hello_world.c:119:6: note: previous declaration of 'i' was here
+  int i;
+      ^
+hello_world.c:139:4: error: expected ';' before 'songs'
+    songs[i].filename = fileInfo.fname;
+    ^
+hello_world.c: In function 'main':
+hello_world.c:174:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:165:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:160:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [obj/default/hello_world.o] Error 1
+20:10:56 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'main':
+hello_world.c:173:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:164:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:159:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+20:11:03 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+20:11:35 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'main':
+hello_world.c:173:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:164:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:159:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+20:11:42 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+20:12:30 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'main':
+hello_world.c:174:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:165:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:160:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+20:12:37 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+20:13:36 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'main':
+hello_world.c:175:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:166:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:161:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+20:13:43 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+20:15:31 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'main':
+hello_world.c:181:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:166:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:161:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+20:15:38 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]
+20:17:40 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c:137:22: error: assignment to expression with array type
+    songs[i].filename = fileInfo.fname;
+                      ^
+hello_world.c: In function 'main':
+hello_world.c:181:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:166:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:161:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [obj/default/hello_world.o] Error 1
+20:17:44 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c:137:22: error: assignment to expression with array type
+    songs[i].filename = fileInfo.fname;
+                      ^
+hello_world.c: In function 'main':
+hello_world.c:181:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:166:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:161:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [obj/default/hello_world.o] Error 1
+20:20:18 **** Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../AudioPlayer_bsp//HAL/inc -I../AudioPlayer_bsp/ -I../AudioPlayer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'initialState':
+hello_world.c:70:2: warning: implicit declaration of function 'printTrack' [-Wimplicit-function-declaration]
+  printTrack(0, songs[0].filename);
+  ^
+hello_world.c: In function 'loadSongs':
+hello_world.c:121:2: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  if(result = f_opendir(&dir, dirName)){
+  ^
+hello_world.c: In function 'main':
+hello_world.c:181:2: warning: implicit declaration of function 'alt_irq_register' [-Wimplicit-function-declaration]
+  alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+  ^
+hello_world.c:166:6: warning: unused variable 'songFile' [-Wunused-variable]
+  FIL songFile;
+      ^
+hello_world.c: In function 'printTrack':
+hello_world.c:161:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking AudioPlayer.elf
+nios2-elf-g++  -T'../AudioPlayer_bsp//linker.x' -msys-crt0='../AudioPlayer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../AudioPlayer_bsp/   -Wl,-Map=AudioPlayer.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o AudioPlayer.elf obj/default/fatfs.o obj/default/fatfs_diskio.o obj/default/fatfs_nios2_de0_nano_spi.o obj/default/fatfs_nios2_de1_pio.o obj/default/fatfs_nios2_de1_spi.o obj/default/ff.o obj/default/hello_world.o obj/default/main.o obj/default/monitor.o obj/default/uart_nios2.o -lm -msys-lib=m
+nios2-elf-insert AudioPlayer.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1001148 --timestamp 1494339556 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name LogicalStep --quartus_project_dir "C:/LogicalStepSVN/LogicalStep" --jdi ../..//output_files/LogicalStep_top.jdi --sopcinfo C:/LogicalStepSVN/LogicalStep/Software/AudioPlayer_bsp/../../LogicalStep.sopcinfo
+Info: (AudioPlayer.elf) 134 KBytes program size (code + initialized data).
+Info:                   8050 KBytes free for stack + heap.
+Info: Creating AudioPlayer.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source AudioPlayer.elf >AudioPlayer.objdump
+[AudioPlayer build complete]
+20:20:25 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+make all 
+Info: Building ../AudioPlayer_bsp/
+C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
+[BSP build complete]
+[AudioPlayer build complete]

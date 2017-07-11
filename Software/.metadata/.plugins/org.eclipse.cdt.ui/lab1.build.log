@@ -1,9 +1,21 @@
-18:19:58 **** Incremental Build of configuration Nios II for project lab1 ****
+17:58:38 **** Build of configuration Nios II for project lab1 ****
 make all 
 Info: Building ../lab1_bsp/
 C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab1_bsp/
-[BSP build complete]
-[lab1 build complete]
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
 
-18:20:01 Build Finished (took 2s.907ms)
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [makefile] Error 1
+make: *** [../lab1_bsp/-recurs-make-lib] Error 2
+
+17:58:42 Build Finished (took 3s.301ms)
 

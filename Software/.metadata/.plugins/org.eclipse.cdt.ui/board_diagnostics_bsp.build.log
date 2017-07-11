@@ -1,6 +1,5 @@
-19:36:22 **** Build of configuration Nios II for project board_diagnostics_bsp ****
+17:58:36 **** Build of configuration Nios II for project board_diagnostics_bsp ****
 make all 
-makefile:588: Warning: SOPC File ../../LogicalStep.sopcinfo could not be found.
 Makefile not up to date.
 settings.bsp has been modified since the BSP Makefile was generated.
 
@@ -15,5 +14,5 @@ To generate from the command line:
 
 make: *** [makefile] Error 1
 
-19:36:24 Build Finished (took 1s.381ms)
+17:58:38 Build Finished (took 2s.597ms)
 

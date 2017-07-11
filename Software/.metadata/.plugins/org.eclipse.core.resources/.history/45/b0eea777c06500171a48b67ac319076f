@@ -1,0 +1,150 @@
+/* Lab 2 for ECE224
+ * Group 6
+ * Richard Shi and Fanzhe Meng
+ */
+
+/*=========================================================================*/
+/*  Includes                                                               */
+/*=========================================================================*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+
+#include <system.h>
+#include <sys/alt_alarm.h>
+#include <io.h>
+
+#include "fatfs.h"
+#include "diskio.h"
+
+#include "ff.h"
+#include "monitor.h"
+#include "uart.h"
+
+#include "alt_types.h"
+
+#include <altera_up_avalon_audio.h>
+#include <altera_up_avalon_audio_and_video_config.h>
+
+/*=========================================================================*/
+/*  Typedefs                                                               */
+/*=========================================================================*/
+typedef struct{
+	char *filename;
+	unsigned long size;
+} SongFile;
+
+/*=========================================================================*/
+/*  Constants                                                              */
+/*=========================================================================*/
+#define SONG_COUNT 20
+#define DRIVE 0
+
+/*=========================================================================*/
+/*  Globals                                                                */
+/*=========================================================================*/
+SongFile songs[SONG_COUNT];
+
+
+
+/*=========================================================================*/
+/*  Functions                                                              */
+/*=========================================================================*/
+
+
+static void put_rc(FRESULT rc) {
+    const char *str =
+        "OK\0" "DISK_ERR\0" "INT_ERR\0" "NOT_READY\0" "NO_FILE\0" "NO_PATH\0"
+        "INVALID_NAME\0" "DENIED\0" "EXIST\0" "INVALID_OBJECT\0" "WRITE_PROTECTED\0"
+        "INVALID_DRIVE\0" "NOT_ENABLED\0" "NO_FILE_SYSTEM\0" "MKFS_ABORTED\0" "TIMEOUT\0"
+        "LOCKED\0" "NOT_ENOUGH_CORE\0" "TOO_MANY_OPEN_FILES\0";
+    FRESULT i;
+
+    for (i = 0; i != rc && *str; i++) {
+        while (*str++);
+    }
+    xprintf("rc=%u FR_%s\n", (uint32_t) rc, str);
+}
+
+// Checks a filename if it is a vaild .wav filename
+int isWav(const char *filename){
+  const char *suffix = ".wav"; // Length of 4
+  const size_t suffixlen = 4;
+
+  if(!filename){
+    return 0; // filename is null
+  }
+
+  size_t namelen = strlen(filename);
+  return strncasecmp(filename + namelen - suffixlen, suffix, suffixlen) == 0;
+}
+
+// Load all songs in directory into player
+int loadSongs(char *dirName){
+	FILINFO fileInfo;
+	DIR dir;
+	int result;
+	int i;
+
+	xprintf("About to load directory\n");
+	if(result = f_opendir(&dir, dirName)){
+		put_rc(result);
+		return result;
+	}
+
+	xprintf("Directory loaded, loading songs: \n");
+	for(i = 0; i < SONG_COUNT; i++){
+		result = f_readdir(&dir, &fileInfo);
+		if ((result != FR_OK) || !fileInfo.fname[0]){
+			break;
+		}
+
+		// If subdirectory, skip it
+		if (fileInfo.fattrib & AM_DIR) {
+			continue;
+		}
+
+		//xprintf("Checking if \"%s\" is a wav \n", fileInfo.fname);
+		if(isWav(fileInfo.fname)){
+			//xprintf("Loading song \"%s\" with size %9lu\n", &(fileInfo.fname[0]), fileInfo.fsize);
+			songs[i].filename = fileInfo.fname;
+			songs[i].size = fileInfo.fsize;
+		}
+	}
+
+	xprintf("Directory loaded, loading songs: \n");
+	return 0;
+}
+
+int loadCurrentDir(){
+	return loadSongs("");
+}
+
+
+int LCDprint(int trackNumber, TCHAR fname) {
+	// open the lcd
+	FILE *lcd = fopen("/dev/lcd_display", "w");
+	if (lcd == NULL)
+		return 1; // error opening the lcd
+
+	fprintf(lcd, "%d %s", trackNumber, fname);
+	fclose(lcd);
+}
+
+int main() {
+	// Initializations
+	FATFS disk;
+
+
+	// Disk init and mount
+	xprintf("rc=%d\n", (uint16_t) disk_initialize((uint8_t) DRIVE));
+	put_rc(f_mount((uint8_t) DRIVE, &disk));
+
+	// Load all songs in current directory into array
+	put_rc(loadCurrentDir());
+
+
+}
+
+

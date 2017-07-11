@@ -1,6 +1,18 @@
-20:01:32 **** Clean-only build of configuration Nios II for project lab1_bsp ****
-make clean 
-[BSP clean complete]
+17:58:42 **** Build of configuration Nios II for project lab1_bsp ****
+make all 
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
 
-20:01:33 Build Finished (took 688ms)
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [makefile] Error 1
+
+17:58:44 Build Finished (took 2s.316ms)
 

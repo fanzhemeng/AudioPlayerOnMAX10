@@ -1,0 +1,195 @@
+/* Lab 2 for ECE224
+ * Group 6
+ * Richard Shi and Fanzhe Meng
+ */
+
+/*=========================================================================*/
+/*  Includes                                                               */
+/*=========================================================================*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+
+#include <system.h>
+#include <sys/alt_alarm.h>
+#include <io.h>
+
+#include "fatfs.h"
+#include "diskio.h"
+
+#include "ff.h"
+#include "monitor.h"
+#include "uart.h"
+
+#include "alt_types.h"
+
+#include <altera_up_avalon_audio.h>
+#include <altera_up_avalon_audio_and_video_config.h>
+
+/*=========================================================================*/
+/*  Typedefs                                                               */
+/*=========================================================================*/
+typedef struct{
+	char *filename;
+	unsigned long size;
+} SongFile;
+
+typedef enum {
+	INITIAL,
+	NOT_PLAYING,
+	NEXT_SONG,
+	PREV_SONG,
+	PLAYING,
+	PAUSED,
+	REVERSING,
+	FAST_FORWARDING
+} PlayerState;
+
+
+/*=========================================================================*/
+/*  Constants                                                              */
+/*=========================================================================*/
+#define SONG_COUNT 20
+#define DRIVE 0
+
+/*=========================================================================*/
+/*  Globals                                                                */
+/*=========================================================================*/
+SongFile songs[SONG_COUNT];
+PlayerState pstate;
+int currentTrack;
+
+/*=========================================================================*/
+/*  Functions                                                              */
+/*=========================================================================*/
+
+// Just first sets up the menu
+void initialState(){
+	currentTrack = 0;			// Ensure the current track is the first one
+	printTrack(0, songs[0].filename);
+	pstate = NOT_PLAYING;
+}
+
+void playingState(){
+}
+
+
+static void buttonPressed(void* context, alt_u32 id) {
+	xprintf("Testing ISR\n");
+
+	//TODO: IORD the BUTTON_PIO and see what value is it to find the complement of the buttons
+
+
+	IOWR(BUTTON_PIO_BASE, 3, 0x0); // Clear stimulus_in ISR
+}
+
+static void putRc(FRESULT rc) {
+    const char *str =
+        "OK\0" "DISK_ERR\0" "INT_ERR\0" "NOT_READY\0" "NO_FILE\0" "NO_PATH\0"
+        "INVALID_NAME\0" "DENIED\0" "EXIST\0" "INVALID_OBJECT\0" "WRITE_PROTECTED\0"
+        "INVALID_DRIVE\0" "NOT_ENABLED\0" "NO_FILE_SYSTEM\0" "MKFS_ABORTED\0" "TIMEOUT\0"
+        "LOCKED\0" "NOT_ENOUGH_CORE\0" "TOO_MANY_OPEN_FILES\0";
+    FRESULT i;
+
+    for (i = 0; i != rc && *str; i++) {
+        while (*str++);
+    }
+    xprintf("rc=%u FR_%s\n", (uint32_t) rc, str);
+}
+
+// Checks a filename if it is a vaild .wav filename
+int isWav(const char *filename){
+  const char *suffix = ".wav"; // Length of 4
+  const size_t suffixlen = 4;
+
+  if(!filename){
+    return 0; // filename is null
+  }
+
+  size_t namelen = strlen(filename);
+  return strncasecmp(filename + namelen - suffixlen, suffix, suffixlen) == 0;
+}
+
+// Load all songs in directory into player
+int loadSongs(char *dirName){
+	FILINFO fileInfo;
+	DIR dir;
+	int result;
+	int i;
+
+	if(result = f_opendir(&dir, dirName)){
+		putRc(result);
+		return result;
+	}
+	for(i = 0; i < SONG_COUNT; i++){
+		result = f_readdir(&dir, &fileInfo);
+		if ((result != FR_OK) || !fileInfo.fname[0]){
+			break;
+		}
+		// If subdirectory, skip it
+		if (fileInfo.fattrib & AM_DIR) {
+			continue;
+		}
+
+		xprintf("Loading file: %s", fileInfo.fname);
+		if(isWav(fileInfo.fname)){
+			songs[i].filename = fileInfo.fname;
+			songs[i].size = fileInfo.fsize;
+		}
+	}
+	return 0;
+}
+
+int loadCurrentDir(){
+	return loadSongs("");
+}
+
+
+int printTrack(int trackNumber, char *filename) {
+	// open the lcd
+	FILE *lcd = fopen("/dev/lcd_display", "w");
+	if (lcd == NULL)
+		return 1; // error opening the lcd
+
+	fprintf(lcd, "%d - %s", trackNumber, filename);
+	fclose(lcd);
+}
+
+int main() {
+	// Initializations
+	FATFS disk;
+	FIL songFile;
+
+	// Disk init and mount
+	xprintf("rc=%d\n", (uint16_t) disk_initialize((uint8_t) DRIVE));
+	putRc(f_mount((uint8_t) DRIVE, &disk));
+	putRc(loadCurrentDir());
+
+	//Clear previous interrupts if any and register ISR
+	IOWR(BUTTON_PIO_BASE, 3, 0x0);
+	alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+	IOWR(BUTTON_PIO_BASE, 2, 0xFF);
+
+	// First start off on first track
+	currentTrack = INITIAL;
+
+	// Main run loop
+	while(1) {
+		switch(pstate){
+		case INITIAL:
+			initialState();
+			break;
+		case NEXT_SONG:
+			break;
+		case PREV_SONG:
+			break;
+		case PLAYING:
+			break;
+		default:
+			break;
+		}
+	}
+}
+
+

@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Jun 20, 2017 9:17:28 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1497964648775</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>C:\LogicalStepSVN\LogicalStep\software\AudioPlayer_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
+        <BspGeneratedTimeStamp>Jul 10, 2017 6:05:02 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1499724302021</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>C:\LogicalStepSVN\LogicalStep\Software\AudioPlayer_bsp</BspGeneratedLocation>
+        <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\LogicalStep.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>nios2_gen2_0</Cpu>

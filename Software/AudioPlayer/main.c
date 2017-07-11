@@ -247,7 +247,7 @@ void display_help(void)
 /***************************************************************************/
 /*  main                                                                   */
 /***************************************************************************/
-int main(void)
+int notmain(void)
 {
 	int fifospace;
     char *ptr, *ptr2;
@@ -478,7 +478,9 @@ int main(void)
             case 'l':          /* fl [<path>] - Directory listing */
                 while (*ptr == ' ')
                     ptr++;
+                xprintf("Directory is now: %s\n", ptr);
                 res = f_opendir(&Dir, ptr);
+
                 if (res) {
                     put_rc(res);
                     break;
@@ -510,7 +512,7 @@ int main(void)
                     xputc('\n');
 #endif
                 }
-                xprintf("%4u File(s),%10lu bytes total\n%4u Dir(s)", s1, p1, s2);
+                xprintf("%4u File(s),%10lu BYTES total\n%4u Dir(s)", s1, p1, s2);
                 res = f_getfree(ptr, (uint32_t *) & p1, &fs);
                 if (res == FR_OK)
                     xprintf(", %10lu bytes free\n", p1 * fs->csize * 512);
