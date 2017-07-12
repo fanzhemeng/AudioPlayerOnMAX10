@@ -33,6 +33,8 @@
 #define MAX_SONGS 20
 #define MAX_SONGNAME_SIZE 20
 #define DRIVE 0
+#define SONGEFILE_OPEN_MODE 1
+#define BUFFER_SIZE 8
 
 /*=========================================================================*/
 /*  Typedefs                                                               */
@@ -64,6 +66,7 @@ PlayerState pstate;
 Transition transition;
 int currentTrack;
 int songCount = 0;
+uint8_t Buff[8192] __attribute__ ((aligned(4)));  /* Working buffer */
 
 /*=========================================================================*/
 /*  Functions                                                              */
@@ -168,7 +171,7 @@ int isWav(const char *filename){
 int loadSongs(char *dirName){
 	FILINFO fileInfo;
 	DIR dir;
-	int result;
+	FRESULT result;
 
 	if(result = f_opendir(&dir, dirName)){
 		putRc(result);
@@ -203,6 +206,11 @@ int main() {
 	// Initializations
 	FATFS disk;
 	FIL songFile;
+    FRESULT result;
+    alt_up_audio_dev *audio_dev;
+    uint32_t bytesToRead, bytesBeenRead;
+    long totalBytesToRead;
+    uint8_t l_buf[2], r_buf[2];
 
 	// "di 0" -- 'disk initialize' and mounts the drive to the ‘0’ location
 	xprintf("rc=%d\n", (uint16_t) disk_initialize((uint8_t) DRIVE));
@@ -217,41 +225,102 @@ int main() {
 	IOWR(BUTTON_PIO_BASE, 2, 0xFF);
     
     init();
-    // TODO: need to f_open the file
+    // open the file
+    result = f_open(&songFile, songs[currentTrack].filename, SONGEFILE_OPEN_MODE);
+    if (result != FR_OK) {  // cannot open song file
+        putRc(result);
+        return 1;
+    }
+    
+    // open audio device
+    audio_dev = alt_up_audio_open_dev("/dev/Audio");
+    if (audio_dev == NULL)
+        alt_printf("Error: could not open audio device \n");
+    else
+        alt_printf("Opened audio device \n");
+    
+    totalBytesToRead = songs[currentTrack].size;
     
 	// Main run loop
 	while(1) {
         while (!stateChanged) {
+            // do not play when pstate == NOT_PLAYING
             if (pstate == NOT_PLAYING) continue;
-            // TODO: code for playing song
+            // playing current track otherwise
+            while (totalBytesToRead > 0) {
+                if (totalBytesToRead >= BUFFER_SIZE) {
+                    bytesToRead = BUFFER_SIZE;
+                    totalBytesToRead -= BUFFER_SIZE;
+                } else {
+                    bytesToRead = totalBytesToRead;
+                    totalBytesToRead = 0;
+                }
+                
+                result = f_read(&songFile, Buff, bytesToRead, &bytesBeenRead);
+                if (result != FR_OK) {  // cannot read bytes
+                    putRc(result);
+                    return 1;
+                }
+                if (bytesBeenRead == 0) { // bytes been read is 0, should not happen
+                    return 1;
+                }
+                
+                // write buffers to audio interface 
+                uint8_t *cursor;
+                for(cursor = Buff; cursor < Buff + BUFFER_SIZE; cursor += 4){
+                    l_buf[0] = cursor[0];
+                    l_buf[1] = cursor[1];
+                    r_buf[0] = cursor[2];
+                    r_buf[1] = cursor[3];
+                    
+                    alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+                    alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+                }
+            }
         }
         
 		switch(transition){
-		case PLAY_PAUSE:
-            if (pstate == PLAYING) pstate = NOT_PLAYING;
-            else pstate = PLAYING;
-			break;
-		case STOP:
-            // TODO: move internal pointer in file to very beginning
-            
-            pstate = NOT_PLAYING;
-			break;
-		case BACKWARD:
-            if (pstate == NOT_PLAYING) { 
-                prevSong();
-                // TODO: need to f_open the file before playing
-            }
-            else {} // pstate == PLAYING
-			break;
-		case FORWARD:
-            if (pstate == NOT_PLAYING) { 
-                nextSong();
-                // TODO: need to f_open the file before playing
-            }
-            else {} // pstate == PLAYING
-			break;
+            case PLAY_PAUSE:
+                if (pstate == PLAYING) pstate = NOT_PLAYING;
+                else pstate = PLAYING;
+                break;
+            case STOP:
+                // move internal pointer to very beginning
+                result = f_lseek(&songFile, 0);
+                if (result != FR_OK) {
+                    putRc(result);
+                    return 1;
+                }
+                // set pstate to NOT_PLAYING
+                pstate = NOT_PLAYING;
+                break;
+            case BACKWARD:
+                if (pstate == NOT_PLAYING) { 
+                    prevSong();
+                    // open next song file
+                    result = f_open(&songFile, songs[currentTrack].filename, SONGEFILE_OPEN_MODE);
+                    if (result != FR_OK) {
+                        putRc(result);
+                        return 1;
+                    }
+                    totalBytesToRead = songs[currentTrack].size;
+                }
+                else {} // pstate == PLAYING: reverse while button held
+                break;
+            case FORWARD:
+                if (pstate == NOT_PLAYING) { 
+                    nextSong();
+                    // open next song file
+                    result = f_open(&songFile, songs[currentTrack].filename, SONGEFILE_OPEN_MODE);
+                    if (result != FR_OK) {
+                        putRc(result);
+                        return 1;
+                    }
+                    totalBytesToRead = songs[currentTrack].size;
+                }
+                else {} // pstate == PLAYING: double speed while button held
+                break;
 		}
-        
         stateChanged = 0;
 	}
 }
