@@ -12,9 +12,9 @@
 #define MAX_SONGS 20
 #define MAX_SONGNAME_SIZE 20
 
-#define bool short int
-#define true 1
-#define false 0
+//#define bool short int
+//#define true 1
+//#define false 0
 
 /*=========================================================================*/
 /*  Typedefs                                                               */
@@ -30,11 +30,11 @@ typedef enum {
 } PlayerState;
 
 typedef enum {
-	NONE,
+	FORWARD,
     PLAY_PAUSE,
     STOP,
     BACKWARD,
-    FORWARD
+	NONE
 } ButtonState;
 
 /*=========================================================================*/

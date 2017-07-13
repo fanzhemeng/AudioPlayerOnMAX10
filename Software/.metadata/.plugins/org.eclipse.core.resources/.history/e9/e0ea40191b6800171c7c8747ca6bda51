@@ -1,0 +1,162 @@
+/* Lab 2 for ECE224
+ * Group 6
+ * Richard Shi and Fanzhe Meng
+ *
+ * Menu Module
+ * Loads songs from directory and keeps track of currently selected song
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+
+
+#include "fatfs.h"
+#include "ff.h"
+#include "monitor.h"
+#include "diskio.h"
+
+#include "audioplayer.h"
+
+
+/*=========================================================================*/
+/*  Constants and Defines                                                  */
+/*=========================================================================*/
+#define DRIVE 0
+
+/*=========================================================================*/
+/*  Globals                                                               */
+/*=========================================================================*/
+static FATFS disk;
+
+static SongFile songs[MAX_SONGS];
+static int currentTrack = 0;
+static int songCount = 0;
+
+/*=========================================================================*/
+/*  Functions                                                               */
+/*=========================================================================*/
+
+// Checks a filename if it is a vaild .wav filename
+static int isWav(const char *filename){
+  const char *suffix = ".wav"; // Length of 4
+  const size_t suffixlen = 4;
+
+  if(!filename){
+    return 0; // filename is null
+  }
+
+  size_t namelen = strlen(filename);
+  return strncasecmp(filename + namelen - suffixlen, suffix, suffixlen) == 0;
+}
+
+static void printTrack(int trackNumber, char *filename) {
+	// open the lcd
+	FILE *lcd = fopen("/dev/lcd_display", "w");
+	if (lcd == NULL)
+		return; // error opening the lcd
+
+	// Clear the screen
+	fprintf(lcd, "\x1B[2J");
+	fprintf(lcd, "%d %s\n", trackNumber, filename);
+	fclose(lcd);
+}
+
+static void printCurrentTrack(void){
+	printTrack(currentTrack, songs[currentTrack].filename);
+}
+
+static void nextSong(void){
+	if(currentTrack < songCount - 1){
+		currentTrack += 1;
+	} else {
+		currentTrack = 0;
+	}
+
+	printCurrentTrack();
+	pstate = NOT_PLAYING;
+}
+
+static void prevSong(){
+	if(currentTrack > 0){
+		currentTrack -= 1;
+	} else {
+		currentTrack = songCount - 1;
+	}
+}
+
+// Load all songs in specified directory (Or current if dirName is an empty string)
+// into the global Songfile Array pointed to by the second argument
+void loadDirectory(char *dirName){
+	FILINFO fileInfo;
+	DIR dir;
+	FRESULT result;
+
+	if((result = f_opendir(&dir, dirName))){
+		putRc(result);
+		return;
+	}
+
+	while(songCount < MAX_SONGS){
+		result = f_readdir(&dir, &fileInfo);
+		if ((result != FR_OK) || !fileInfo.fname[0]){
+			break;
+		}
+		// If subdirectory, skip it
+		if (fileInfo.fattrib & AM_DIR) {
+			continue;
+		}
+
+		if(isWav(fileInfo.fname)){
+			memcpy(songs[songCount].filename, fileInfo.fname, MAX_SONGNAME_SIZE);
+			songs[songCount].size = fileInfo.fsize;
+			//xprintf("%dth Track: %s  with size: %ul\n", i, songs[i].filename, songs[i].size);
+			songCount += 1;
+		}
+	}
+	return;
+}
+
+// Initialize and mount the disk
+void initializeDisk(void){
+	xprintf("Disk init code: %d\n", (uint16_t) disk_initialize((uint8_t) DRIVE));	//di 0
+	xprintf("Disk mount code: ");
+	putRc(f_mount((uint8_t) DRIVE, &disk));											//fi 0
+}
+
+// Loop for Menu
+SongFile *menu(void){
+	SongFile *selectedSong = NULL;
+	printCurrentTrack();
+
+	while(!selectedSong){
+		if(stateChanged){
+			switch(bstate){
+			case FORWARD:
+				nextSong();
+				printCurrentTrack();
+				break;
+			case PLAY_PAUSE:
+				selectedSong = songs + currentTrack;
+				break;
+			case STOP:
+				break;
+			case BACKWARD:
+				prevSong();
+				printCurrentTrack();
+				break;
+			default:	// Do nothing if stop button pressed
+				break;
+			}
+
+			// Clear state change flag
+			stateChanged = false;
+		}
+	}
+
+	return selectedSong;
+}
+
+

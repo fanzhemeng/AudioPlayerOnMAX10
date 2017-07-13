@@ -1,0 +1,71 @@
+/* Lab 2 for ECE224
+ * Group 6
+ * Richard Shi and Fanzhe Meng
+ */
+
+#ifndef AUDIOPLAYER_H
+#define AUDIOPLAYER_H
+
+/*=========================================================================*/
+/* Functions		                                                       */
+/*=========================================================================*/
+#include<stdbool.h>
+
+/*=========================================================================*/
+/*  Constants and Defines                                                  */
+/*=========================================================================*/
+#define MAX_SONGS 20
+#define MAX_SONGNAME_SIZE 20
+
+//#define bool short int
+//#define true 1
+//#define false 0
+
+/*=========================================================================*/
+/*  Typedefs                                                               */
+/*=========================================================================*/
+typedef struct{
+	char filename[MAX_SONGNAME_SIZE];
+	unsigned long size;
+} SongFile;
+
+typedef enum {
+	NOT_PLAYING,
+	PLAYING
+} PlayerState;
+
+typedef enum {
+	FORWARD,
+    PLAY_PAUSE,
+    STOP,
+    BACKWARD,
+	NONE
+} ButtonState;
+
+/*=========================================================================*/
+/*  Globals                                                               */
+/*=========================================================================*/
+
+extern PlayerState pstate;
+extern ButtonState bstate;
+extern bool stateChanged;
+
+
+/*=========================================================================*/
+/* Functions		                                                       */
+/*=========================================================================*/
+
+// Utilities.c
+void putRc(FRESULT rc);
+
+// menu.c
+void initializeDisk(void);
+void loadDirectory(char *dirName);
+SongFile *menu(void);
+
+// player.c
+int playSong(char *songFilename, unsigned long size);
+
+
+
+#endif /* AUDIOPLAYER_H */

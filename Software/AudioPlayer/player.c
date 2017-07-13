@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdint.h>
+#include <stdbool.h>
 
 #include "alt_types.h"
 #include <altera_up_avalon_audio.h>
@@ -22,7 +23,9 @@
 
 // Defines
 #define SONGFILE_OPEN_MODE 1
-#define BUFFER_SIZE 32
+#define BUFFER_SIZE 512
+#define FAST_FORWARD_SPEED 2
+#define NORMAL_SPEED 1
 
 // Globals
 static uint8_t Buff[8192] __attribute__ ((aligned(4)));  /* Working buffer */
@@ -30,7 +33,6 @@ static uint8_t Buff[8192] __attribute__ ((aligned(4)));  /* Working buffer */
 
 // Pause loop and returns if song should be exited or not
 bool pauseSong(void){
-	xprintf("Pausing song\n");
 	while(true){
 		if(stateChanged){
 			switch(bstate){
@@ -54,13 +56,15 @@ int playSong(char *songFilename, unsigned long size){
 	xprintf("I'm playing %s with a size of %d\n", songFilename, size);
 	FIL songFile;
 	alt_up_audio_dev *audio_dev;
+	uint8_t *cursor;
 
 	uint32_t bytesToRead, bytesBeenRead;
 	long totalBytesToRead;
 	uint8_t l_buf[2], r_buf[2];
 
-	//Song speed multiplier
-	int multiplier = 1;
+	//Song playing modifiers
+	int speed_multiplier = 1;
+	bool forwardDirection = true;
 
 	// Open Song file
     FRESULT result = f_open(&songFile, songFilename, SONGFILE_OPEN_MODE);
@@ -76,6 +80,8 @@ int playSong(char *songFilename, unsigned long size){
     } else {
     	xprintf("Opened audio device \n");
     }
+
+
 
     // Loop for song playing
     totalBytesToRead = size;
@@ -93,12 +99,9 @@ int playSong(char *songFilename, unsigned long size){
 			putRc(result);
 			return 1;
 		}
-		if (bytesBeenRead == 0) { // bytes been read is 0, should not happen
-			return 1;
-		}
 
 		//TODO: Read state of buttons and change behavior based on them
-		// FORWARD: 	Set multiplier to 2
+		// FORWARD: 	Set speed_multiplier to 2
 		// PLAY_PAUSE: 	Go into pause loop
 		// STOP: 		Return from function
 		// BACKWARD:	Lseek to before read, then after play lseek again
@@ -107,8 +110,7 @@ int playSong(char *songFilename, unsigned long size){
 		if(stateChanged){
 			switch(bstate){
 			case FORWARD:
-				stateChanged = false;
-				multiplier = 2;
+				speed_multiplier = FAST_FORWARD_SPEED;
 				break;
 			case PLAY_PAUSE:
 				stateChanged = false;
@@ -117,23 +119,22 @@ int playSong(char *songFilename, unsigned long size){
 				}
 				break;
 			case STOP:
-				stateChanged = false;
 				return 0;
-				break;
 			case BACKWARD:
-
+				totalBytesToRead += bytesToRead;
+				forwardDirection = false;
 				break;
 			case NONE:
-				stateChanged = false;
-				multiplier = 1;
+				forwardDirection = true;
+				speed_multiplier = NORMAL_SPEED;
 				break;
 			}
+			stateChanged = false;
 		}
 
+		for(cursor = Buff; cursor < Buff + BUFFER_SIZE; cursor += 4 * speed_multiplier){
+			while(alt_up_audio_write_fifo_space(audio_dev, ALT_UP_AUDIO_RIGHT) < 2);	// Don't smash the FIFO
 
-		// write buffers to audio interface
-		uint8_t *cursor;
-		for(cursor = Buff; cursor < Buff + BUFFER_SIZE; cursor += 4 * multiplier){
 			// Write to left channel buffer
 			l_buf[0] = cursor[0];
 			l_buf[1] = cursor[1];
@@ -142,9 +143,17 @@ int playSong(char *songFilename, unsigned long size){
 			r_buf[0] = cursor[2];
 			r_buf[1] = cursor[3];
 
-			// Write final values to
+			// Write final values
 			alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
 			alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+
+			//alt_up_audio_play_l(audio_dev, l_buf, 1);
+			//alt_up_audio_play_r(audio_dev, r_buf, 1);
+		}
+
+		// Now seek to the buffer chunk before the buffer chunk just played
+		if(!forwardDirection){
+			f_lseek(&songFile, f_tell(&songFile) - 2*BUFFER_SIZE);
 		}
     }
 
