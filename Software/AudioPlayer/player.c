@@ -27,6 +27,29 @@
 // Globals
 static uint8_t Buff[8192] __attribute__ ((aligned(4)));  /* Working buffer */
 
+
+// Pause loop and returns if song should be exited or not
+bool pauseSong(void){
+	xprintf("Pausing song\n");
+	while(true){
+		if(stateChanged){
+			switch(bstate){
+			case PLAY_PAUSE:
+				stateChanged = false;
+				return false;
+				break;
+			case STOP:
+				stateChanged = false;
+				return true;
+				break;
+			default:
+				break;
+			}
+		}
+	}
+}
+
+
 int playSong(char *songFilename, unsigned long size){
 	xprintf("I'm playing %s with a size of %d\n", songFilename, size);
 	FIL songFile;
@@ -35,6 +58,9 @@ int playSong(char *songFilename, unsigned long size){
 	uint32_t bytesToRead, bytesBeenRead;
 	long totalBytesToRead;
 	uint8_t l_buf[2], r_buf[2];
+
+	//Song speed multiplier
+	int multiplier = 1;
 
 	// Open Song file
     FRESULT result = f_open(&songFile, songFilename, SONGFILE_OPEN_MODE);
@@ -71,9 +97,40 @@ int playSong(char *songFilename, unsigned long size){
 			return 1;
 		}
 
+		//TODO: Read state of buttons and change behavior based on them
+		// FORWARD: 	Set multiplier to 2
+		// PLAY_PAUSE: 	Go into pause loop
+		// STOP: 		Return from function
+		// BACKWARD:	Lseek to before read, then after play lseek again
+		// NONE:		Do Nothing
+
+		if(stateChanged){
+			switch(bstate){
+			case FORWARD:
+
+				break;
+			case PLAY_PAUSE:
+				stateChanged = false;
+				if(pauseSong()){
+					return 0;
+				}
+				break;
+			case STOP:
+				stateChanged = false;
+				return 0;
+				break;
+			case BACKWARD:
+
+				break;
+			case NONE:
+				break;
+			}
+		}
+
+
 		// write buffers to audio interface
 		uint8_t *cursor;
-		for(cursor = Buff; cursor < Buff + BUFFER_SIZE; cursor += 4){
+		for(cursor = Buff; cursor < Buff + BUFFER_SIZE; cursor += 4 * multiplier){
 			// Write to left channel buffer
 			l_buf[0] = cursor[0];
 			l_buf[1] = cursor[1];
@@ -82,12 +139,13 @@ int playSong(char *songFilename, unsigned long size){
 			r_buf[0] = cursor[2];
 			r_buf[1] = cursor[3];
 
-			// Write completely to
+			// Write final values to
 			alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
 			alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
 		}
     }
 
+    f_close(&songFile);
     return 0;
 }
 

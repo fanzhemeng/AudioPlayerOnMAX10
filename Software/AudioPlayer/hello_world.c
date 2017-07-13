@@ -36,9 +36,9 @@ bool stateChanged = false;
 static void buttonPressed(void* context, alt_u32 id) {
 	//xprintf("Testing ISR\n");
 	int i;
+
 	// Delay read due to button oscillation
 	for(i = 0; i < 100; i++);
-
 	unsigned int n = IORD(BUTTON_PIO_BASE, 0);
 
     // identify which button is pressed

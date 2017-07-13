@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Jul 12, 2017 5:05:31 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1499893531648</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Jul 13, 2017 4:29:21 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1499977761876</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\LogicalStepSVN\LogicalStep\Software\AudioPlayer_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\LogicalStep.sopcinfo</SopcDesignFile>
