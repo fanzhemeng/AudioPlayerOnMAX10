@@ -1,9 +1,9 @@
-19:05:49 **** Incremental Build of configuration Nios II for project AudioPlayer ****
+19:50:22 **** Incremental Build of configuration Nios II for project AudioPlayer ****
 make all 
 Info: Building ../AudioPlayer_bsp/
 C:/software/Altera/15.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../AudioPlayer_bsp/
 [BSP build complete]
 [AudioPlayer build complete]
 
-19:05:52 Build Finished (took 2s.859ms)
+19:50:25 Build Finished (took 3s.134ms)
 

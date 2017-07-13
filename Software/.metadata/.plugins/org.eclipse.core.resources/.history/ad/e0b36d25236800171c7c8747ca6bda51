@@ -24,7 +24,7 @@
 // Defines
 #define SONGFILE_OPEN_MODE 1
 #define BUFFER_SIZE 512
-#define FAST_FORWARD_SPEED 3
+#define FAST_FORWARD_SPEED 2
 #define NORMAL_SPEED 1
 
 // Globals

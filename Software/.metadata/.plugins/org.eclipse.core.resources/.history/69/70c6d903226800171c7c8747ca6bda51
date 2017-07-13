@@ -24,7 +24,7 @@
 // Defines
 #define SONGFILE_OPEN_MODE 1
 #define BUFFER_SIZE 512
-#define FAST_FORWARD_SPEED 3
+#define FAST_FORWARD_SPEED 2
 #define NORMAL_SPEED 1
 
 // Globals
@@ -81,9 +81,12 @@ int playSong(char *songFilename, unsigned long size){
     	xprintf("Opened audio device \n");
     }
 
+
+
     // Loop for song playing
     totalBytesToRead = size;
     while (totalBytesToRead > 0) {
+    	xprintf("%d\n", totalBytesToRead);
 		if (totalBytesToRead >= BUFFER_SIZE) {
 			bytesToRead = BUFFER_SIZE;
 			totalBytesToRead -= BUFFER_SIZE;
@@ -130,7 +133,8 @@ int playSong(char *songFilename, unsigned long size){
 		}
 
 		if(!forwardDirection){
-			f_lseek(&songFile, f_tell(&songFile) - BUFFER_SIZE);
+			f_lseek(&songFile, f_tell(&songFile) - 2*BUFFER_SIZE);
+			totalBytesToRead += bytesToRead;
 		}
 
 		for(cursor = Buff; cursor < Buff + BUFFER_SIZE; cursor += 4 * speed_multiplier){
@@ -155,7 +159,7 @@ int playSong(char *songFilename, unsigned long size){
 		// Now seek to the buffer chunk before the buffer chunk just played
 		if(!forwardDirection){
 			f_lseek(&songFile, f_tell(&songFile) - 2*BUFFER_SIZE);
-			totalBytesToRead += 3*BUFFER_SIZE;
+			totalBytesToRead += bytesToRead;
 		}
     }
 

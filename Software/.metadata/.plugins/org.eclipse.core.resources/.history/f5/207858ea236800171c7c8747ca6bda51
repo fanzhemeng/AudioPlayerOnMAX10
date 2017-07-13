@@ -131,6 +131,7 @@ int playSong(char *songFilename, unsigned long size){
 
 		if(!forwardDirection){
 			f_lseek(&songFile, f_tell(&songFile) - BUFFER_SIZE);
+			totalBytesToRead += BUFFER_SIZE;
 		}
 
 		for(cursor = Buff; cursor < Buff + BUFFER_SIZE; cursor += 4 * speed_multiplier){
@@ -155,7 +156,7 @@ int playSong(char *songFilename, unsigned long size){
 		// Now seek to the buffer chunk before the buffer chunk just played
 		if(!forwardDirection){
 			f_lseek(&songFile, f_tell(&songFile) - 2*BUFFER_SIZE);
-			totalBytesToRead += 3*BUFFER_SIZE;
+			totalBytesToRead += 2*BUFFER_SIZE;
 		}
     }
 

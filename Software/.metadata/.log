@@ -5226,3 +5226,99 @@ Binding(F4,
 
 !ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:05:24.771
 !MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001148 --id=0x0 --timestamp=1494339556 /cygdrive/c/LogicalStepSVN/LogicalStep/Software/AudioPlayer/AudioPlayer.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:16:01.802
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:16:03.341
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001148 --id=0x0 --timestamp=1494339556]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:16:06.594
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001148 --id=0x0 --timestamp=1494339556 /cygdrive/c/LogicalStepSVN/LogicalStep/Software/AudioPlayer/AudioPlayer.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:19:16.523
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:19:18.054
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001148 --id=0x0 --timestamp=1494339556]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:19:21.349
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001148 --id=0x0 --timestamp=1494339556 /cygdrive/c/LogicalStepSVN/LogicalStep/Software/AudioPlayer/AudioPlayer.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:22:15.387
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:22:16.965
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001148 --id=0x0 --timestamp=1494339556]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:22:20.362
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001148 --id=0x0 --timestamp=1494339556 /cygdrive/c/LogicalStepSVN/LogicalStep/Software/AudioPlayer/AudioPlayer.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:23:30.749
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001148 --id=0x0 --timestamp=1494339556]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:23:34.143
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001148 --id=0x0 --timestamp=1494339556 /cygdrive/c/LogicalStepSVN/LogicalStep/Software/AudioPlayer/AudioPlayer.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:29:58.472
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:29:59.886
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001148 --id=0x0 --timestamp=1494339556]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:30:03.202
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001148 --id=0x0 --timestamp=1494339556 /cygdrive/c/LogicalStepSVN/LogicalStep/Software/AudioPlayer/AudioPlayer.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:32:10.591
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:32:12.102
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001148 --id=0x0 --timestamp=1494339556]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:32:15.335
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001148 --id=0x0 --timestamp=1494339556 /cygdrive/c/LogicalStepSVN/LogicalStep/Software/AudioPlayer/AudioPlayer.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:34:40.527
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:34:41.930
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001148 --id=0x0 --timestamp=1494339556]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:34:45.165
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001148 --id=0x0 --timestamp=1494339556 /cygdrive/c/LogicalStepSVN/LogicalStep/Software/AudioPlayer/AudioPlayer.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:35:29.883
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:35:31.278
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001148 --id=0x0 --timestamp=1494339556]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:35:34.498
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001148 --id=0x0 --timestamp=1494339556 /cygdrive/c/LogicalStepSVN/LogicalStep/Software/AudioPlayer/AudioPlayer.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:36:30.533
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:36:31.942
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001148 --id=0x0 --timestamp=1494339556]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:36:35.141
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001148 --id=0x0 --timestamp=1494339556 /cygdrive/c/LogicalStepSVN/LogicalStep/Software/AudioPlayer/AudioPlayer.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:37:57.040
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:37:58.437
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001148 --id=0x0 --timestamp=1494339556]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:38:01.674
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001148 --id=0x0 --timestamp=1494339556 /cygdrive/c/LogicalStepSVN/LogicalStep/Software/AudioPlayer/AudioPlayer.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:50:26.151
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:50:27.577
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001148 --id=0x0 --timestamp=1494339556]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2017-07-13 19:50:30.924
+!MESSAGE Executing: [C:/software/altera/15.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001148 --id=0x0 --timestamp=1494339556 /cygdrive/c/LogicalStepSVN/LogicalStep/Software/AudioPlayer/AudioPlayer.elf]
