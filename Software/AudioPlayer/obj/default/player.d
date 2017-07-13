@@ -7,7 +7,7 @@ obj/default/player.o: player.c ../AudioPlayer_bsp//HAL/inc/alt_types.h \
  ../AudioPlayer_bsp//drivers/inc/altera_up_avalon_audio_and_video_config_regs.h \
  ../AudioPlayer_bsp//HAL/inc/io.h ../AudioPlayer_bsp//HAL/inc/alt_types.h \
  fatfs.h ff.h ffconf.h fatfs_config.h fatfs_types.h diskio.h \
- fatfs_diskio.h audioplayer.h
+ fatfs_diskio.h monitor.h uart.h audioplayer.h
 
 ../AudioPlayer_bsp//HAL/inc/alt_types.h:
 
@@ -44,5 +44,9 @@ fatfs_types.h:
 diskio.h:
 
 fatfs_diskio.h:
+
+monitor.h:
+
+uart.h:
 
 audioplayer.h:

@@ -13,19 +13,25 @@
 
 #include "fatfs.h"
 #include "ff.h"
+#include "monitor.h"
 #include "diskio.h"
 
 #include "audioplayer.h"
 
+
+/*=========================================================================*/
+/*  Constants and Defines                                                  */
+/*=========================================================================*/
+#define DRIVE 0
+
 /*=========================================================================*/
 /*  Globals                                                               */
 /*=========================================================================*/
-FATFS disk;
+static FATFS disk;
 
-SongFile songs[MAX_SONGS];
-int currentTrack = 0;
-int songCount = 0;
-
+static SongFile songs[MAX_SONGS];
+static int currentTrack = 0;
+static int songCount = 0;
 
 /*=========================================================================*/
 /*  Functions                                                               */
@@ -44,11 +50,11 @@ static int isWav(const char *filename){
   return strncasecmp(filename + namelen - suffixlen, suffix, suffixlen) == 0;
 }
 
-static int printTrack(int trackNumber, char *filename) {
+static void printTrack(int trackNumber, char *filename) {
 	// open the lcd
 	FILE *lcd = fopen("/dev/lcd_display", "w");
 	if (lcd == NULL)
-		return 1; // error opening the lcd
+		return; // error opening the lcd
 
 	// Clear the screen
 	fprintf(lcd, "\x1B[2J");
@@ -56,7 +62,7 @@ static int printTrack(int trackNumber, char *filename) {
 	fclose(lcd);
 }
 
-static int printCurrentTrack(void){
+static void printCurrentTrack(void){
 	printTrack(currentTrack, songs[currentTrack].filename);
 }
 
@@ -86,7 +92,7 @@ void loadDirectory(char *dirName){
 	DIR dir;
 	FRESULT result;
 
-	if(result = f_opendir(&dir, dirName)){
+	if((result = f_opendir(&dir, dirName))){
 		putRc(result);
 		return;
 	}
@@ -119,11 +125,11 @@ void initializeDisk(void){
 }
 
 // Loop for Menu
-void menu(void){
-	bool exitMenu = false;
+SongFile *menu(void){
+	SongFile *selectedSong = NULL;
 	printCurrentTrack();
 
-	while(!exitMenu){
+	while(!selectedSong){
 		if(stateChanged){
 			switch(bstate){
 			case FORWARD:
@@ -131,9 +137,9 @@ void menu(void){
 				printCurrentTrack();
 				break;
 			case PLAY_PAUSE:
-				//TODO: Send selected song information to Song module
-				// i.e. return code or direct modification
-				exitMenu = true;
+				selectedSong = songs + currentTrack;
+				break;
+			case STOP:
 				break;
 			case BACKWARD:
 				prevSong();
@@ -147,6 +153,8 @@ void menu(void){
 			stateChanged = false;
 		}
 	}
+
+	return selectedSong;
 }
 
 

@@ -11,9 +11,6 @@
 /*=========================================================================*/
 #define MAX_SONGS 20
 #define MAX_SONGNAME_SIZE 20
-#define DRIVE 0
-#define SONGEFILE_OPEN_MODE 1
-#define BUFFER_SIZE 8
 
 #define bool short int
 #define true 1
@@ -59,7 +56,10 @@ void putRc(FRESULT rc);
 // menu.c
 void initializeDisk(void);
 void loadDirectory(char *dirName);
+SongFile *menu(void);
 
+// player.c
+int playSong(char *songFilename, unsigned long size);
 
 
 

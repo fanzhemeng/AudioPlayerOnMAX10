@@ -16,38 +16,79 @@
 
 #include "fatfs.h"
 #include "diskio.h"
+#include "monitor.h"
 
 #include "audioplayer.h"
 
-uint8_t Buff[8192] __attribute__ ((aligned(4)));  /* Working buffer */
+// Defines
+#define SONGFILE_OPEN_MODE 1
+#define BUFFER_SIZE 8
 
+// Globals
+static uint8_t Buff[8192] __attribute__ ((aligned(4)));  /* Working buffer */
 
-//TODO:
-FIL songFile;
-FRESULT result;
+int playSong(char *songFilename, unsigned long size){
+	xprintf("I'm playing %s with a size of %d\n", songFilename, size);
+	FIL songFile;
+	alt_up_audio_dev *audio_dev;
 
+	uint32_t bytesToRead, bytesBeenRead;
+	long totalBytesToRead;
+	uint8_t l_buf[2], r_buf[2];
 
-alt_up_audio_dev *audio_dev;
-uint32_t bytesToRead, bytesBeenRead;
-long totalBytesToRead;
-uint8_t l_buf[2], r_buf[2];
+	// Open Song file
+    FRESULT result = f_open(&songFile, songFilename, SONGFILE_OPEN_MODE);
+	if(result != FR_OK){
+		putRc(result);
+		return 1;
+	}
 
+    // open audio device
+    audio_dev = alt_up_audio_open_dev("/dev/Audio");
+    if (audio_dev == NULL){
+        xprintf("Error: could not open audio device \n");
+    } else {
+    	xprintf("Opened audio device \n");
+    }
 
-// Song player
-int setupPlayer(){
+    // Loop for song playing
+    totalBytesToRead = size;
+    while (totalBytesToRead > 0) {
+		if (totalBytesToRead >= BUFFER_SIZE) {
+			bytesToRead = BUFFER_SIZE;
+			totalBytesToRead -= BUFFER_SIZE;
+		} else {
+			bytesToRead = totalBytesToRead;
+			totalBytesToRead = 0;
+		}
 
+		result = f_read(&songFile, Buff, bytesToRead, &bytesBeenRead);
+		if (result != FR_OK) {  // cannot read bytes
+			putRc(result);
+			return 1;
+		}
+		if (bytesBeenRead == 0) { // bytes been read is 0, should not happen
+			return 1;
+		}
+
+		// write buffers to audio interface
+		uint8_t *cursor;
+		for(cursor = Buff; cursor < Buff + BUFFER_SIZE; cursor += 4){
+			// Write to left channel buffer
+			l_buf[0] = cursor[0];
+			l_buf[1] = cursor[1];
+
+			// Write to right channel buffer
+			r_buf[0] = cursor[2];
+			r_buf[1] = cursor[3];
+
+			// Write completely to
+			alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+			alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+		}
+    }
+
+    return 0;
 }
 
-int playSong(char *songFile, unsigned long size){
-
-}
-
-int exitPlayer(){
-
-}
-
-// Loop for Audio Player
-void play(void){
-	xprintf("TODO: PLAY SONG");
-}
 
