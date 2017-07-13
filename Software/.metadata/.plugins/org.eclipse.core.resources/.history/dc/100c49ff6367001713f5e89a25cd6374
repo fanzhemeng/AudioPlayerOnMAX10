@@ -1,0 +1,57 @@
+/* Lab 2 for ECE224
+ * Group 6
+ * Richard Shi and Fanzhe Meng
+ */
+
+#ifndef AUDIOPLAYER_H
+#define AUDIOPLAYER_H
+
+/*=========================================================================*/
+/*  Constants and Defines                                                  */
+/*=========================================================================*/
+#define MAX_SONGS 20
+#define MAX_SONGNAME_SIZE 20
+#define DRIVE 0
+#define SONGEFILE_OPEN_MODE 1
+#define BUFFER_SIZE 8
+
+#define bool short int
+#define true 1
+#define false 0
+
+/*=========================================================================*/
+/*  Typedefs                                                               */
+/*=========================================================================*/
+typedef struct{
+	char filename[MAX_SONGNAME_SIZE];
+	unsigned long size;
+} SongFile;
+
+typedef enum {
+	NOT_PLAYING,
+	PLAYING
+} PlayerState;
+
+typedef enum {
+	NONE,
+    PLAY_PAUSE,
+    STOP,
+    BACKWARD,
+    FORWARD
+} ButtonState;
+
+/*=========================================================================*/
+/*  Globals                                                               */
+/*=========================================================================*/
+
+extern PlayerState pstate = NOT_PLAYING;
+extern ButtonState bstate = NONE;
+extern bool stateChanged = false;
+
+
+/*=========================================================================*/
+/* Functoins		                                                               */
+/*=========================================================================*/
+
+
+#endif /* AUDIOPLAYER_H */

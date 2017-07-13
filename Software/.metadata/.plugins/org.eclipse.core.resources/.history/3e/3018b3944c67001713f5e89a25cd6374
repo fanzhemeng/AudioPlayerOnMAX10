@@ -1,0 +1,347 @@
+/* Lab 2 for ECE224
+ * Group 6
+ * Richard Shi and Fanzhe Meng
+ */
+
+/*=========================================================================*/
+/*  Includes                                                               */
+/*=========================================================================*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+
+#include <system.h>
+#include <sys/alt_alarm.h>
+#include <io.h>
+
+#include "fatfs.h"
+#include "diskio.h"
+
+#include "ff.h"
+#include "monitor.h"
+#include "uart.h"
+
+#include "alt_types.h"
+
+#include <altera_up_avalon_audio.h>
+#include <altera_up_avalon_audio_and_video_config.h>
+
+/*=========================================================================*/
+/*  Constants                                                              */
+/*=========================================================================*/
+#define MAX_SONGS 20
+#define MAX_SONGNAME_SIZE 20
+#define DRIVE 0
+#define SONGEFILE_OPEN_MODE 1
+#define BUFFER_SIZE 8
+
+/*=========================================================================*/
+/*  Typedefs                                                               */
+/*=========================================================================*/
+typedef struct{
+	char filename[MAX_SONGNAME_SIZE];
+	unsigned long size;
+} SongFile;
+
+typedef enum {
+	NOT_PLAYING,
+	PLAYING
+} PlayerState;
+
+typedef enum {
+	NONE,
+    PLAY_PAUSE,
+    STOP,
+    BACKWARD,
+    FORWARD
+} ButtonState;
+
+int stateChanged = 0;
+
+/*=========================================================================*/
+/*  Globals                                                                */
+/*=========================================================================*/
+
+SongFile songs[MAX_SONGS];
+PlayerState pstate = NOT_PLAYING;
+ButtonState bstate = NONE;
+
+int currentTrack = 0;
+int songCount = 0;
+uint8_t Buff[8192] __attribute__ ((aligned(4)));  /* Working buffer */
+
+/*=========================================================================*/
+/*  Functions                                                              */
+/*=========================================================================*/
+
+static void putRc(FRESULT rc) {
+    const char *str =
+        "OK\0" "DISK_ERR\0" "INT_ERR\0" "NOT_READY\0" "NO_FILE\0" "NO_PATH\0"
+        "INVALID_NAME\0" "DENIED\0" "EXIST\0" "INVALID_OBJECT\0" "WRITE_PROTECTED\0"
+        "INVALID_DRIVE\0" "NOT_ENABLED\0" "NO_FILE_SYSTEM\0" "MKFS_ABORTED\0" "TIMEOUT\0"
+        "LOCKED\0" "NOT_ENOUGH_CORE\0" "TOO_MANY_OPEN_FILES\0";
+    FRESULT i;
+
+    for (i = 0; i != rc && *str; i++) {
+        while (*str++);
+    }
+    xprintf("rc=%u FR_%s\n", (uint32_t) rc, str);
+}
+
+int printTrack(int trackNumber, char *filename) {
+	// open the lcd
+	FILE *lcd = fopen("/dev/lcd_display", "w");
+	if (lcd == NULL)
+		return 1; // error opening the lcd
+
+	//xprintf("%d - %s\n", trackNumber, filename);
+	fprintf(lcd, "%d - %s", trackNumber, filename);
+	fclose(lcd);
+}
+
+void init(){
+    // Ensure the current track is the first one
+	currentTrack = 0;
+	printTrack(currentTrack, songs[currentTrack].filename);
+	pstate = NOT_PLAYING;
+}
+
+void nextSong(){
+	if(currentTrack < songCount - 1){
+		currentTrack += 1;
+	} else {
+		currentTrack = 0;
+	}
+
+	printTrack(currentTrack, songs[currentTrack].filename);
+	pstate = NOT_PLAYING;
+}
+
+void prevSong(){
+	if(currentTrack > 0){
+		currentTrack -= 1;
+	} else {
+		currentTrack = songCount - 1;
+	}
+
+	printTrack(currentTrack, songs[currentTrack].filename);
+	pstate = NOT_PLAYING;
+}
+
+static void buttonISR(void* context, alt_u32 id) {
+	//xprintf("Testing ISR\n");
+	unsigned int n = IORD(BUTTON_PIO_BASE, 0);
+
+    // identify which button is pressed
+	switch (n) {
+        case 0b1110: //0xe - Forward button
+            bstate = FORWARD;
+            break;
+        case 0b1101: //0xd - Play Button
+        	bstate = PLAY_PAUSE;
+            break;
+        case 0b1011: //0xb - Stop Button
+        	bstate = STOP;
+            break;
+        case 0b0111: //0x7 - Reverse Button
+        	bstate = BACKWARD;
+            break;
+        case 0b1111: //0xf - No button pressed
+        	bstate = NONE;
+        	break;
+        default:
+        	// Do nothing if invalid button combination
+        	break;
+	}
+
+    // indicate the state has changed
+    stateChanged = 1;
+    // clear button ISR
+	IOWR(BUTTON_PIO_BASE, 3, 0x0);
+}
+
+// Checks a filename if it is a vaild .wav filename
+int isWav(const char *filename){
+  const char *suffix = ".wav"; // Length of 4
+  const size_t suffixlen = 4;
+
+  if(!filename){
+    return 0; // filename is null
+  }
+
+  size_t namelen = strlen(filename);
+  return strncasecmp(filename + namelen - suffixlen, suffix, suffixlen) == 0;
+}
+
+// Load all songs in specified directory (Or current if dirName is empty)
+int loadSongs(char *dirName){
+	FILINFO fileInfo;
+	DIR dir;
+	FRESULT result;
+
+	if(result = f_opendir(&dir, dirName)){
+		putRc(result);
+		return result;
+	}
+
+	while(songCount < MAX_SONGS){
+		result = f_readdir(&dir, &fileInfo);
+		if ((result != FR_OK) || !fileInfo.fname[0]){
+			break;
+		}
+		// If subdirectory, skip it
+		if (fileInfo.fattrib & AM_DIR) {
+			continue;
+		}
+
+		if(isWav(fileInfo.fname)){
+			memcpy(songs[songCount].filename, fileInfo.fname, MAX_SONGNAME_SIZE);
+			songs[songCount].size = fileInfo.fsize;
+			//xprintf("%dth Track: %s  with size: %ul\n", i, songs[i].filename, songs[i].size);
+			songCount += 1;
+		}
+	}
+	return 0;
+}
+
+int main(int argc, char* argv[]){
+
+	int i;
+
+	//Clear previous interrupts if any and register ISR
+	IOWR(BUTTON_PIO_BASE, 3, 0x0);
+	alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonISR);
+	IOWR(BUTTON_PIO_BASE, 2, 0xFF);
+
+
+
+	while(1){
+		for(i = 0; i < 100000000; i++){
+
+		}
+		xprintf("Player state: %d, button state: %d\n", pstate, bstate);
+	}
+}
+
+/*
+int main() {
+	// Initializations
+	FATFS disk;
+	FIL songFile;
+    FRESULT result;
+    alt_up_audio_dev *audio_dev;
+    uint32_t bytesToRead, bytesBeenRead;
+    long totalBytesToRead;
+    uint8_t l_buf[2], r_buf[2];
+
+	xprintf("rc=%d\n", (uint16_t) disk_initialize((uint8_t) DRIVE));	//di 0
+	putRc(f_mount((uint8_t) DRIVE, &disk));								//fi 0
+	putRc(loadSongsInCurrentDir());
+
+	//Clear previous interrupts if any and register ISR
+	IOWR(BUTTON_PIO_BASE, 3, 0x0);
+	alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonISR);
+	IOWR(BUTTON_PIO_BASE, 2, 0xFF);
+    
+    init();
+    // open the file
+    result = f_open(&songFile, songs[currentTrack].filename, SONGEFILE_OPEN_MODE);
+    if (result != FR_OK) {  // cannot open song file
+        putRc(result);
+        return 1;
+    }
+    
+    // open audio device
+    audio_dev = alt_up_audio_open_dev("/dev/Audio");
+    if (audio_dev == NULL)
+        alt_printf("Error: could not open audio device \n");
+    else
+        alt_printf("Opened audio device \n");
+    
+    totalBytesToRead = songs[currentTrack].size;
+    
+	// Main run loop
+	while(1) {
+        while (!stateChanged) {
+            // do not play when pstate == NOT_PLAYING
+            if (pstate == NOT_PLAYING) continue;
+            // playing current track otherwise
+            while (totalBytesToRead > 0) {
+                if (totalBytesToRead >= BUFFER_SIZE) {
+                    bytesToRead = BUFFER_SIZE;
+                    totalBytesToRead -= BUFFER_SIZE;
+                } else {
+                    bytesToRead = totalBytesToRead;
+                    totalBytesToRead = 0;
+                }
+                
+                result = f_read(&songFile, Buff, bytesToRead, &bytesBeenRead);
+                if (result != FR_OK) {  // cannot read bytes
+                    putRc(result);
+                    return 1;
+                }
+                if (bytesBeenRead == 0) { // bytes been read is 0, should not happen
+                    return 1;
+                }
+                
+                // write buffers to audio interface 
+                uint8_t *cursor;
+                for(cursor = Buff; cursor < Buff + BUFFER_SIZE; cursor += 4){
+                    l_buf[0] = cursor[0];
+                    l_buf[1] = cursor[1];
+                    r_buf[0] = cursor[2];
+                    r_buf[1] = cursor[3];
+                    
+                    alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+                    alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+                }
+            }
+        }
+        
+		switch(bstate){
+            case PLAY_PAUSE:
+                if (pstate == PLAYING) pstate = NOT_PLAYING;
+                else pstate = PLAYING;
+                break;
+            case STOP:
+                // move internal pointer to very beginning
+                result = f_lseek(&songFile, 0);
+                if (result != FR_OK) {
+                    putRc(result);
+                    return 1;
+                }
+                // set pstate to NOT_PLAYING
+                pstate = NOT_PLAYING;
+                break;
+            case BACKWARD:
+                if (pstate == NOT_PLAYING) { 
+                    prevSong();
+                    // open next song file
+                    result = f_open(&songFile, songs[currentTrack].filename, SONGEFILE_OPEN_MODE);
+                    if (result != FR_OK) {
+                        putRc(result);
+                        return 1;
+                    }
+                    totalBytesToRead = songs[currentTrack].size;
+                }
+                else {} // pstate == PLAYING: reverse while button held
+                break;
+            case FORWARD:
+                if (pstate == NOT_PLAYING) { 
+                    nextSong();
+                    // open next song file
+                    result = f_open(&songFile, songs[currentTrack].filename, SONGEFILE_OPEN_MODE);
+                    if (result != FR_OK) {
+                        putRc(result);
+                        return 1;
+                    }
+                    totalBytesToRead = songs[currentTrack].size;
+                }
+                else {} // pstate == PLAYING: double speed while button held
+                break;
+		}
+        stateChanged = 0;
+	}
+}
+*/

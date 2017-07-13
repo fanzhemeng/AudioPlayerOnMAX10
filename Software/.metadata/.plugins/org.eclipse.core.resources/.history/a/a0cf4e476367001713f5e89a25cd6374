@@ -1,0 +1,9 @@
+/* Lab 2 for ECE224
+ * Group 6
+ * Richard Shi and Fanzhe Meng
+ *
+ * Menu Module
+ */
+
+#include "fatfs.h"
+#include "diskio.h"

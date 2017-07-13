@@ -1,0 +1,9 @@
+/* Lab 2 for ECE224
+ * Group 6
+ * Richard Shi and Fanzhe Meng
+ */
+
+
+
+#include <altera_up_avalon_audio.h>
+#include <altera_up_avalon_audio_and_video_config.h>

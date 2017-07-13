@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=========================================================================*/
+/*  Typedefs                                                               */
+/*=========================================================================*/
+typedef struct{
+	char filename[MAX_SONGNAME_SIZE];
+	unsigned long size;
+} SongFile;
+
+typedef enum {
+	NOT_PLAYING,
+	PLAYING
+} PlayerState;
+
+typedef enum {
+	NONE,
+    PLAY_PAUSE,
+    STOP,
+    BACKWARD,
+    FORWARD
+} ButtonState;

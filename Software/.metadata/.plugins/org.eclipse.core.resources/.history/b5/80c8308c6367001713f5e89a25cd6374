@@ -1,0 +1,26 @@
+/* Lab 2 for ECE224
+ * Group 6
+ * Richard Shi and Fanzhe Meng
+ *
+ * Menu Module
+ */
+
+#include "fatfs.h"
+#include "diskio.h"
+
+#include "audioplayer.h"
+
+SongFile songs[MAX_SONGS];
+
+// Checks a filename if it is a vaild .wav filename
+static int isWav(const char *filename){
+  const char *suffix = ".wav"; // Length of 4
+  const size_t suffixlen = 4;
+
+  if(!filename){
+    return 0; // filename is null
+  }
+
+  size_t namelen = strlen(filename);
+  return strncasecmp(filename + namelen - suffixlen, suffix, suffixlen) == 0;
+}

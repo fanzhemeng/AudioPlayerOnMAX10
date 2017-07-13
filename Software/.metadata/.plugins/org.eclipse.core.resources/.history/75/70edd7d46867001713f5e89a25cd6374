@@ -1,0 +1,99 @@
+/* Lab 2 for ECE224
+ * Group 6
+ * Richard Shi and Fanzhe Meng
+ */
+
+/*=========================================================================*/
+/*  Includes                                                               */
+/*=========================================================================*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+
+#include <system.h>
+#include <sys/alt_alarm.h>
+#include <io.h>
+
+//#include "fatfs.h"
+//#include "diskio.h"
+
+#include "ff.h"
+#include "monitor.h"
+#include "uart.h"
+
+#include "audioplayer.h"
+
+//#include "alt_types.h"
+//
+//#include <altera_up_avalon_audio.h>
+//#include <altera_up_avalon_audio_and_video_config.h>
+
+/*=========================================================================*/
+/*  Globals                                                                */
+/*=========================================================================*/
+
+PlayerState pstate = NOT_PLAYING;
+ButtonState bstate = NONE;
+bool stateChanged = false;
+
+/*=========================================================================*/
+/*  Functions                                                              */
+/*=========================================================================*/
+
+static void buttonPressed(void* context, alt_u32 id) {
+	//xprintf("Testing ISR\n");
+	unsigned int n = IORD(BUTTON_PIO_BASE, 0);
+
+    // identify which button is pressed
+	switch (n) {
+        case 0b1110: //0xe - Forward button
+            bstate = FORWARD;
+            break;
+        case 0b1101: //0xd - Play Button
+        	bstate = PLAY_PAUSE;
+            break;
+        case 0b1011: //0xb - Stop Button
+        	bstate = STOP;
+            break;
+        case 0b0111: //0x7 - Reverse Button
+        	bstate = BACKWARD;
+            break;
+        case 0b1111: //0xf - No button pressed	//TODO: ********************************************************** NOT SURE IF WE SHOULD KEEP THIS
+        	bstate = NONE;
+        	break;
+        default:
+        	// Do nothing if invalid button combination
+        	break;
+	}
+
+    stateChanged = true;     			// indicate the state has changed
+	IOWR(BUTTON_PIO_BASE, 3, 0x0);     	// clear button ISR
+}
+
+static void setupInterrupts(void){
+	//Clear previous interrupts if any and register ISR
+	IOWR(BUTTON_PIO_BASE, 3, 0x0);
+	alt_irq_register(BUTTON_PIO_IRQ, (void*) 0, buttonPressed);
+	IOWR(BUTTON_PIO_BASE, 2, 0xFF);
+}
+
+
+int main(int argc, char* argv[]){
+	initializeDisk();
+	loadDirectory();
+	setupInterrupts();
+
+	// Main run loop
+	while(true){
+		if(stateChanged){
+			// Call corresponding state change code?
+
+
+
+
+		} else {
+
+		}
+	}
+}

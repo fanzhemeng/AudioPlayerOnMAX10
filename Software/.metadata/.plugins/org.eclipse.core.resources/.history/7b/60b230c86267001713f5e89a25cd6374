@@ -1,0 +1,30 @@
+/* Lab 2 for ECE224
+ * Group 6
+ * Richard Shi and Fanzhe Meng
+ *
+ * Audio Player Module
+ */
+
+#include "alt_types.h"
+#include <altera_up_avalon_audio.h>
+#include <altera_up_avalon_audio_and_video_config.h>
+
+
+
+#include "audioplayer.h"
+
+
+
+
+// Song player
+int setupPlayer(){
+
+}
+
+int playSong(char *songFile, unsigned long size){
+
+}
+
+int exitPlayer(){
+
+}

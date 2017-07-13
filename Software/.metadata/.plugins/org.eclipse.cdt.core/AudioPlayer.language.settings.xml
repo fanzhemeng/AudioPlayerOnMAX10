@@ -1360,7 +1360,77 @@
 			</provider>
 			<provider id="altera.tool.Nios2GCCBuildCommandParser">
 				<language id="org.eclipse.cdt.core.gcc">
+					<resource project-relative-path="main.c">
+						<entry kind="includePath" name="/AudioPlayer_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/AudioPlayer_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/AudioPlayer_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="fatfs_diskio.c">
+						<entry kind="includePath" name="/AudioPlayer_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/AudioPlayer_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/AudioPlayer_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="utilities.c">
+						<entry kind="includePath" name="/AudioPlayer_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/AudioPlayer_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/AudioPlayer_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="fatfs.c">
+						<entry kind="includePath" name="/AudioPlayer_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/AudioPlayer_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/AudioPlayer_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
 					<resource project-relative-path="fatfs_nios2_de1_spi.c">
+						<entry kind="includePath" name="/AudioPlayer_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/AudioPlayer_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/AudioPlayer_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="player.c">
 						<entry kind="includePath" name="/AudioPlayer_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1388,7 +1458,21 @@
 						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
 						<entry kind="macro" name="__hal__" value=""/>
 					</resource>
-					<resource project-relative-path="main.c">
+					<resource project-relative-path="audioplayer.c">
+						<entry kind="includePath" name="/AudioPlayer_bsp/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/AudioPlayer_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="includePath" name="/AudioPlayer_bsp/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+					</resource>
+					<resource project-relative-path="menu.c">
 						<entry kind="includePath" name="/AudioPlayer_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1403,20 +1487,6 @@
 						<entry kind="macro" name="__hal__" value=""/>
 					</resource>
 					<resource project-relative-path="monitor.c">
-						<entry kind="includePath" name="/AudioPlayer_bsp/HAL/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/AudioPlayer_bsp">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/AudioPlayer_bsp/drivers/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
-						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
-						<entry kind="macro" name="__hal__" value=""/>
-					</resource>
-					<resource project-relative-path="fatfs_diskio.c">
 						<entry kind="includePath" name="/AudioPlayer_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1473,20 +1543,6 @@
 						<entry kind="macro" name="__hal__" value=""/>
 					</resource>
 					<resource project-relative-path="uart_nios2.c">
-						<entry kind="includePath" name="/AudioPlayer_bsp/HAL/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/AudioPlayer_bsp">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/AudioPlayer_bsp/drivers/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
-						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
-						<entry kind="macro" name="__hal__" value=""/>
-					</resource>
-					<resource project-relative-path="fatfs.c">
 						<entry kind="includePath" name="/AudioPlayer_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>

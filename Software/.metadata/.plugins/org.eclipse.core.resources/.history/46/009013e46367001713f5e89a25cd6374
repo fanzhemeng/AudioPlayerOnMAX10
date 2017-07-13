@@ -1,0 +1,15 @@
+// Utilities
+
+void putRc(FRESULT rc) {
+    const char *str =
+        "OK\0" "DISK_ERR\0" "INT_ERR\0" "NOT_READY\0" "NO_FILE\0" "NO_PATH\0"
+        "INVALID_NAME\0" "DENIED\0" "EXIST\0" "INVALID_OBJECT\0" "WRITE_PROTECTED\0"
+        "INVALID_DRIVE\0" "NOT_ENABLED\0" "NO_FILE_SYSTEM\0" "MKFS_ABORTED\0" "TIMEOUT\0"
+        "LOCKED\0" "NOT_ENOUGH_CORE\0" "TOO_MANY_OPEN_FILES\0";
+    FRESULT i;
+
+    for (i = 0; i != rc && *str; i++) {
+        while (*str++);
+    }
+    xprintf("rc=%u FR_%s\n", (uint32_t) rc, str);
+}
