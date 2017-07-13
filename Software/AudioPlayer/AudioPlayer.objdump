@@ -730,7 +730,7 @@ Disassembly of section .entry:
   800014:	08409114 	ori	at,at,580
     jmp r1
   800018:	0800683a 	jmp	at
-  80001c:	00000000 	call	0 <__reset-0x800000>
+  80001c:	00000000 	call	0 <__alt_mem_sdram_0-0x800000>
 
 Disassembly of section .exceptions:
 
@@ -2704,7 +2704,7 @@ DRESULT ffs_DiskIOIoctl (FFS_U8 drv, FFS_U8 ctrl, void *buff)
   801114:	0080140c 	andi	r2,zero,80
   801118:	0080143c 	xorhi	r2,zero,80
   80111c:	0080146c 	andhi	r2,zero,81
-  801120:	008014c0 	call	8014c <__reset-0x77feb4>
+  801120:	008014c0 	call	8014c <__alt_mem_sdram_0-0x77feb4>
    {
       case CTRL_SYNC:  /* Make sure that pending write process has been finished */
          SELECT();
@@ -13843,14 +13843,14 @@ int notmain(void)
   808e6c:	00809b64 	muli	r2,zero,621
   808e70:	00809b64 	muli	r2,zero,621
   808e74:	00809b64 	muli	r2,zero,621
-  808e78:	00808ec0 	call	808ec <__reset-0x77f714>
+  808e78:	00808ec0 	call	808ec <__alt_mem_sdram_0-0x77f714>
   808e7c:	00809b64 	muli	r2,zero,621
   808e80:	00809b64 	muli	r2,zero,621
   808e84:	0080909c 	xori	r2,zero,578
   808e88:	00809b64 	muli	r2,zero,621
   808e8c:	00809b64 	muli	r2,zero,621
   808e90:	0080939c 	xori	r2,zero,590
-  808e94:	00809580 	call	80958 <__reset-0x77f6a8>
+  808e94:	00809580 	call	80958 <__alt_mem_sdram_0-0x77f6a8>
   808e98:	00809b64 	muli	r2,zero,621
   808e9c:	008098c8 	cmpgei	r2,zero,611
   808ea0:	00808f0c 	andi	r2,zero,572
@@ -16588,7 +16588,7 @@ void get_line (char *buff, int len)
   80a91c:	f800283a 	ret
 
 0080a920 <playSong>:
-#define BUFFER_SIZE 8
+#define BUFFER_SIZE 32
 
 // Globals
 static uint8_t Buff[8192] __attribute__ ((aligned(4)));  /* Working buffer */
@@ -16658,14 +16658,14 @@ int playSong(char *songFilename, unsigned long size){
   80a9b8:	00004206 	br	80aac4 <playSong+0x1a4>
 		if (totalBytesToRead >= BUFFER_SIZE) {
   80a9bc:	e0bf6f17 	ldw	r2,-580(fp)
-  80a9c0:	10800210 	cmplti	r2,r2,8
+  80a9c0:	10800810 	cmplti	r2,r2,32
   80a9c4:	1000061e 	bne	r2,zero,80a9e0 <playSong+0xc0>
 			bytesToRead = BUFFER_SIZE;
-  80a9c8:	00800204 	movi	r2,8
+  80a9c8:	00800804 	movi	r2,32
   80a9cc:	e0bf6e15 	stw	r2,-584(fp)
 			totalBytesToRead -= BUFFER_SIZE;
   80a9d0:	e0bf6f17 	ldw	r2,-580(fp)
-  80a9d4:	10bffe04 	addi	r2,r2,-8
+  80a9d4:	10bff804 	addi	r2,r2,-32
   80a9d8:	e0bf6f15 	stw	r2,-580(fp)
   80a9dc:	00000306 	br	80a9ec <playSong+0xcc>
 		} else {
@@ -16757,7 +16757,7 @@ int playSong(char *songFilename, unsigned long size){
   80aab0:	e0bf7015 	stw	r2,-576(fp)
   80aab4:	e0ff7017 	ldw	r3,-576(fp)
   80aab8:	008020b4 	movhi	r2,130
-  80aabc:	10857b04 	addi	r2,r2,5612
+  80aabc:	10858104 	addi	r2,r2,5636
   80aac0:	18bfe136 	bltu	r3,r2,80aa48 <__alt_data_end+0xff80aa48>
     	xprintf("Opened audio device \n");
     }
@@ -19826,7 +19826,7 @@ void putRc(FRESULT rc) {
   80d74c:	0080e134 	movhi	r2,900
   80d750:	0080debc 	xorhi	r2,zero,890
   80d754:	0080e0f8 	rdprs	r2,zero,899
-  80d758:	0080de00 	call	80de0 <__reset-0x77f220>
+  80d758:	0080de00 	call	80de0 <__alt_mem_sdram_0-0x77f220>
   80d75c:	0080e0ac 	andhi	r2,zero,898
   80d760:	0080e134 	movhi	r2,900
   80d764:	0080dfe8 	cmpgeui	r2,zero,895
@@ -25874,7 +25874,7 @@ void putRc(FRESULT rc) {
   813444:	00813cd0 	cmplti	r2,zero,1267
   813448:	00813cd0 	cmplti	r2,zero,1267
   81344c:	00813cd0 	cmplti	r2,zero,1267
-  813450:	00813540 	call	81354 <__reset-0x77ecac>
+  813450:	00813540 	call	81354 <__alt_mem_sdram_0-0x77ecac>
   813454:	00813cd0 	cmplti	r2,zero,1267
   813458:	00813cd0 	cmplti	r2,zero,1267
   81345c:	00813cd0 	cmplti	r2,zero,1267
@@ -28728,19 +28728,19 @@ void putRc(FRESULT rc) {
   816064:	008162ac 	andhi	r2,zero,1418
   816068:	008160dc 	xori	r2,zero,1411
   81606c:	00816270 	cmpltui	r2,zero,1417
-  816070:	008160c0 	call	8160c <__reset-0x77e9f4>
+  816070:	008160c0 	call	8160c <__alt_mem_sdram_0-0x77e9f4>
   816074:	00816270 	cmpltui	r2,zero,1417
   816078:	00816244 	movi	r2,1417
   81607c:	00816270 	cmpltui	r2,zero,1417
-  816080:	008160c0 	call	8160c <__reset-0x77e9f4>
+  816080:	008160c0 	call	8160c <__alt_mem_sdram_0-0x77e9f4>
   816084:	008160dc 	xori	r2,zero,1411
   816088:	008160dc 	xori	r2,zero,1411
   81608c:	00816244 	movi	r2,1417
-  816090:	008160c0 	call	8160c <__reset-0x77e9f4>
+  816090:	008160c0 	call	8160c <__alt_mem_sdram_0-0x77e9f4>
   816094:	008160d0 	cmplti	r2,zero,1411
   816098:	008160d0 	cmplti	r2,zero,1411
   81609c:	008160d0 	cmplti	r2,zero,1411
-  8160a0:	00816280 	call	81628 <__reset-0x77e9d8>
+  8160a0:	00816280 	call	81628 <__alt_mem_sdram_0-0x77e9d8>
   8160a4:	8904b03a 	or	r2,r17,r4
   8160a8:	1000631e 	bne	r2,zero,816238 <__divdf3+0x2c4>
   8160ac:	04800204 	movi	r18,8
@@ -38791,7 +38791,7 @@ alt_exception_cause_generated_bad_addr(alt_exception_cause cause)
   81c554:	d9400015 	stw	r5,0(sp)
   81c558:	d9800115 	stw	r6,4(sp)
   81c55c:	d9c00215 	stw	r7,8(sp)
-  81c560:	00000000 	call	0 <__reset-0x800000>
+  81c560:	00000000 	call	0 <__alt_mem_sdram_0-0x800000>
   81c564:	d9400017 	ldw	r5,0(sp)
   81c568:	d9800117 	ldw	r6,4(sp)
   81c56c:	d9c00217 	ldw	r7,8(sp)
@@ -38877,7 +38877,7 @@ alt_exception_cause_generated_bad_addr(alt_exception_cause cause)
   81c6a4:	10003426 	beq	r2,zero,81c778 <__call_exitprocs+0x18c>
   81c6a8:	9809883a 	mov	r4,r19
   81c6ac:	a8800015 	stw	r2,0(r21)
-  81c6b0:	00000000 	call	0 <__reset-0x800000>
+  81c6b0:	00000000 	call	0 <__alt_mem_sdram_0-0x800000>
   81c6b4:	acc00017 	ldw	r19,0(r21)
   81c6b8:	983fe41e 	bne	r19,zero,81c64c <__alt_data_end+0xff81c64c>
   81c6bc:	dfc00b17 	ldw	ra,44(sp)
