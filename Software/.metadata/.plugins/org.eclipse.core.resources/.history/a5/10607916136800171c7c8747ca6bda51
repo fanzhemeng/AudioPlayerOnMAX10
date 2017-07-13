@@ -124,8 +124,6 @@ int playSong(char *songFilename, unsigned long size){
 
 				break;
 			case NONE:
-				stateChanged = false;
-				multiplier = 1;
 				break;
 			}
 		}
