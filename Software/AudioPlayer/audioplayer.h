@@ -41,9 +41,9 @@ typedef enum {
 /*  Globals                                                               */
 /*=========================================================================*/
 
-extern PlayerState pstate;
-extern ButtonState bstate;
-extern bool stateChanged;
+extern volatile PlayerState pstate;
+extern volatile ButtonState bstate;
+extern volatile bool stateChanged;
 
 
 /*=========================================================================*/

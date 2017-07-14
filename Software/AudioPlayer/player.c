@@ -56,11 +56,13 @@ int playSong(char *songFilename, unsigned long size){
 	xprintf("I'm playing %s with a size of %d\n", songFilename, size);
 	FIL songFile;
 	alt_up_audio_dev *audio_dev;
-	uint8_t *cursor;
+	//uint8_t *cursor;
+	uint16_t *cursor;
 
 	uint32_t bytesToRead, bytesBeenRead;
 	long totalBytesToRead;
-	uint8_t l_buf[2], r_buf[2];
+	//uint8_t l_buf[2];
+	//uint8_t r_buf[2];
 
 	//Song playing modifiers
 	int speed_multiplier = 1;
@@ -133,20 +135,25 @@ int playSong(char *songFilename, unsigned long size){
 			f_lseek(&songFile, f_tell(&songFile) - BUFFER_SIZE);
 		}
 
-		for(cursor = Buff; cursor < Buff + BUFFER_SIZE; cursor += 4 * speed_multiplier){
+		// Cursor is uint16_t, while buff is uint8_t for byte addressability reasons
+		for(cursor = Buff; cursor < Buff + BUFFER_SIZE; cursor += 2 * speed_multiplier){
 			while(alt_up_audio_write_fifo_space(audio_dev, ALT_UP_AUDIO_RIGHT) < 2);	// Don't smash the FIFO
 
 			// Write to left channel buffer
-			l_buf[0] = cursor[0];
-			l_buf[1] = cursor[1];
+			//l_buf[0] = cursor[0];
+			//l_buf[1] = cursor[1];
 
 			// Write to right channel buffer
-			r_buf[0] = cursor[2];
-			r_buf[1] = cursor[3];
+			//r_buf[0] = cursor[2];
+			//r_buf[1] = cursor[3];
 
 			// Write final values
-			alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
-			alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+			//alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+			//alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+
+			alt_up_audio_write_fifo_head(audio_dev, cursor[0], ALT_UP_AUDIO_LEFT);
+			alt_up_audio_write_fifo_head(audio_dev, cursor[1], ALT_UP_AUDIO_RIGHT);
+
 
 			//alt_up_audio_play_l(audio_dev, l_buf, 1);
 			//alt_up_audio_play_r(audio_dev, r_buf, 1);

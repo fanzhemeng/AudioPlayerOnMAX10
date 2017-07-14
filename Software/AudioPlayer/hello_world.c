@@ -26,9 +26,9 @@
 /*  Globals                                                                */
 /*=========================================================================*/
 
-PlayerState pstate = NOT_PLAYING;
-ButtonState bstate = NONE;
-bool stateChanged = false;
+volatile PlayerState pstate = NOT_PLAYING;
+volatile ButtonState bstate = NONE;
+volatile bool stateChanged = false;
 
 /*=========================================================================*/
 /*  Functions                                                              */
