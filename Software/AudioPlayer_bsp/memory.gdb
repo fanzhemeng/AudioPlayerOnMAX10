@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'LogicalStep'
 # SOPC Builder design path: ../../LogicalStep.sopcinfo
 #
-# Generated: Thu Jul 13 20:10:31 EDT 2017
+# Generated: Tue Jul 18 08:29:24 EDT 2017
 
 # DO NOT MODIFY THIS FILE
 #

@@ -94,12 +94,6 @@ int playSong(char *songFilename, unsigned long size){
 			totalBytesToRead = 0;
 		}
 
-
-		if(!forwardDirection){
-			f_lseek(&songFile, f_tell(&songFile) - BUFFER_SIZE);
-		}
-
-
 		result = f_read(&songFile, Buff, bytesToRead, &bytesBeenRead);
 		if (result != FR_OK || f_tell(&songFile) == NULL) {  // cannot read bytes
 			putRc(result);

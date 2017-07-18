@@ -96,7 +96,7 @@ int playSong(char *songFilename, unsigned long size){
 
 
 		if(!forwardDirection){
-			f_lseek(&songFile, f_tell(&songFile) - BUFFER_SIZE);
+					f_lseek(&songFile, f_tell(&songFile) - BUFFER_SIZE);
 		}
 
 

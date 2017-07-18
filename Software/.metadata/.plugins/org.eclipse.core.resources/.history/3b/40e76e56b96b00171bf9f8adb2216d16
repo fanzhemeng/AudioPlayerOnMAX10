@@ -94,12 +94,6 @@ int playSong(char *songFilename, unsigned long size){
 			totalBytesToRead = 0;
 		}
 
-
-		if(!forwardDirection){
-			f_lseek(&songFile, f_tell(&songFile) - BUFFER_SIZE);
-		}
-
-
 		result = f_read(&songFile, Buff, bytesToRead, &bytesBeenRead);
 		if (result != FR_OK || f_tell(&songFile) == NULL) {  // cannot read bytes
 			putRc(result);
@@ -137,22 +131,38 @@ int playSong(char *songFilename, unsigned long size){
 			stateChanged = false;
 		}
 
-//		if(!forwardDirection){
-//			f_lseek(&songFile, f_tell(&songFile) - BUFFER_SIZE);
-//		}
+		if(!forwardDirection){
+			f_lseek(&songFile, f_tell(&songFile) - BUFFER_SIZE);
+		}
 
 		// Cursor is uint16_t, while buff is uint8_t for byte addressability reasons
 		for(cursor = Buff; cursor < Buff + BUFFER_SIZE; cursor += 2 * speed_multiplier){
 			while(alt_up_audio_write_fifo_space(audio_dev, ALT_UP_AUDIO_RIGHT) < 2);	// Don't smash the FIFO
 
+			// Write to left channel buffer
+			//l_buf[0] = cursor[0];
+			//l_buf[1] = cursor[1];
+
+			// Write to right channel buffer
+			//r_buf[0] = cursor[2];
+			//r_buf[1] = cursor[3];
+
+			// Write final values
+			//alt_up_audio_write_fifo(audio_dev, &(l_buf), 1, ALT_UP_AUDIO_LEFT);
+			//alt_up_audio_write_fifo(audio_dev, &(r_buf), 1, ALT_UP_AUDIO_RIGHT);
+
 			alt_up_audio_write_fifo_head(audio_dev, cursor[0], ALT_UP_AUDIO_LEFT);
 			alt_up_audio_write_fifo_head(audio_dev, cursor[1], ALT_UP_AUDIO_RIGHT);
+
+
+			//alt_up_audio_play_l(audio_dev, l_buf, 1);
+			//alt_up_audio_play_r(audio_dev, r_buf, 1);
 		}
 
 		// Now seek to the buffer chunk before the buffer chunk just played
 		if(!forwardDirection){
 			f_lseek(&songFile, f_tell(&songFile) - 2*BUFFER_SIZE);
-			totalBytesToRead += 2*BUFFER_SIZE;
+			totalBytesToRead += 3*BUFFER_SIZE;
 		}
     }
 

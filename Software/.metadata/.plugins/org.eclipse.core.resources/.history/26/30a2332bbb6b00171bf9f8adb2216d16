@@ -94,12 +94,6 @@ int playSong(char *songFilename, unsigned long size){
 			totalBytesToRead = 0;
 		}
 
-
-		if(!forwardDirection){
-			f_lseek(&songFile, f_tell(&songFile) - BUFFER_SIZE);
-		}
-
-
 		result = f_read(&songFile, Buff, bytesToRead, &bytesBeenRead);
 		if (result != FR_OK || f_tell(&songFile) == NULL) {  // cannot read bytes
 			putRc(result);
@@ -137,9 +131,9 @@ int playSong(char *songFilename, unsigned long size){
 			stateChanged = false;
 		}
 
-//		if(!forwardDirection){
-//			f_lseek(&songFile, f_tell(&songFile) - BUFFER_SIZE);
-//		}
+		if(!forwardDirection){
+			f_lseek(&songFile, f_tell(&songFile) - BUFFER_SIZE);
+		}
 
 		// Cursor is uint16_t, while buff is uint8_t for byte addressability reasons
 		for(cursor = Buff; cursor < Buff + BUFFER_SIZE; cursor += 2 * speed_multiplier){
